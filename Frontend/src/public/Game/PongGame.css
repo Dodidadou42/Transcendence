@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+.press-start-2p-regular_game {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+#bodyPongGame {
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    font-family: 'Press Start 2P', cursive;
+    font-family: "Orbitron", sans-serif;
+}
+
+#content_game {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#canvasGame_game {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+#bodyPongGame canvas {
+    display: block;
+}
+
+.loser-screen_game {
+    background-color: #fff;
+    border: 2px solid red;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    position: absolute;
+    width: 90%;
+    height: 20%;
+    top: 40%;
+    left: 5%;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.winner-screen_game {
+    background-color: #fff;
+    border: 2px solid green;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    position: absolute;
+    width: 90%;
+    height: 20%;
+    top: 40%;
+    left: 5%;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.waiting-screen_game {
+    background-color: #fff;
+    border: 2px solid rgb(0, 191, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
+    position: absolute;
+    width: 90%; 
+    height: 20%;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.timer-screen_game {
+    background-color: #fff;
+    border: 2px solid rgb(0, 100, 128);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 100, 0, 0.5);
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-title_game {
+    width: 100%;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.secondary-title_game {
+    width: 100%;
+    font-size: 24px;
+    color: #666; 
+}
+
+#bodyPongGame h1, #bodyPongGame h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: None;
+}

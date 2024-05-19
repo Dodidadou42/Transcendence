@@ -1,0 +1,808 @@
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.body2_smessages {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+
+	/* background-color: rgba(0, 128, 0, 0.507); */
+
+}
+
+#messHead {
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	margin: 0 auto;
+	box-shadow: 0 4px 3px rgba(0, 0, 0, 0.123);
+	padding-bottom: 5px;
+}
+
+#messBody {
+	width: calc(100% - 30px);
+	max-width: 1400px;
+	height: calc(100% - 90px);
+	margin: 10px auto;
+	padding-bottom: 10px;
+
+	background-color: rgba(173, 173, 173, 0.253);
+	border-radius: 5px;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+}
+
+#messPanel {
+	height: calc(100% - 52px);
+	width: 100%;
+	overflow-y: scroll;
+
+}
+
+#messSend {
+	height: fit-content;
+	min-height: 50px;
+	max-height: 75px;
+	width: calc(100% - 20px);
+	background-color: white;
+	border-top: 2px solid rgba(189, 189, 189, 0.445);
+	border-radius: 20px;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+#messSendInput {
+	width: calc(100% - 70px);
+	height: fit-content;
+	max-height: 100%;
+	outline: none;
+	border: 0;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Noto', sans-serif;
+	resize: none;
+	margin-left: 10px;
+}
+
+#messSendButton {
+	height: 100%;
+	width: 50px;
+	/* border-radius: 50%; */
+	margin: auto 0;
+	user-select: none;
+	cursor: pointer;
+}
+
+#messSendButton:hover {
+	background-color: rgb(223, 223, 223);
+}
+
+#messSendIcon {
+	transform: scale(1.8);
+	height: fit-content;
+	width: fit-content;
+	margin: auto;
+	margin-top: 12px;
+}
+
+#messHeadBox {
+	width: calc(100% - 50px);
+	max-width: 700px;
+	height: 100%;
+	margin: 0 auto;
+	/* background-color: rgba(207, 207, 207, 0.616); */
+
+	display: flex;
+	flex-direction: row;
+}
+
+#HeadImg {
+	width: 55px;
+	height: 55px;
+	margin: auto 0;
+	object-fit: cover;
+	object-position: center;
+}
+
+#HeadName {
+	margin-top: 10px;
+	margin-left: 5px;
+	width: calc(100% - 160px);
+	max-width: calc(100% - 130px);
+	height: fit-content;
+	overflow: hidden;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Noto', sans-serif;
+}
+
+.HeadSettings, .HeadSettings2{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin: auto 0;
+	margin-left: 15px;
+	background-color: white;
+	box-shadow: 0 0 7px rgba(65, 65, 65, 0.582);
+	user-select: none;
+	cursor: pointer;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: 0.1s;
+}
+
+.HeadSettings2 {
+	border-radius: 7px;
+	margin-left: 10px;
+}
+.HeadSettings2:hover {
+	transform: scale(1.2);
+}
+
+.HeadSettingsIconBox {
+	height: fit-content;
+	width: fit-content;
+	margin: auto;
+	padding-right: 3px;
+	padding-left: 4px;
+	padding-top: 5px;
+	padding-bottom: 1px;
+	/* margin-top: ; */
+	transform: scale(1.7);
+	transition: 0.5s;
+}
+
+.HeadSettings:hover {
+	box-shadow: 0 0 5px rgba(65, 65, 65, 0.342);
+	transform: scale(1.1);
+
+	.HeadSettingsIconBox {
+		transform: scale(1.7) rotateZ(90deg);
+	}
+}
+
+.CSpanel {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+
+	background-color: white;
+}
+
+#CShead, #GShead {
+	width: 100%;
+	height: fit-content;
+	/* background-color: rgba(255, 0, 0, 0.404); */
+	display: flex;
+	flex-direction: column;
+}
+
+#CSheadBack, #GSheadBack {
+	background-color: rgb(240, 240, 240);
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Kanit', sans-serif;
+	box-shadow: 0 0 5px rgba(54, 54, 54, 0.514);
+	width: fit-content;
+	height: fit-content;
+	margin-top: 10px;
+	margin-left: 25px;
+	user-select: none;
+	cursor: pointer;
+	padding: 2px 4px;
+}
+
+#CSheadBack:hover, #GSheadBack:hover {
+	background-color: rgb(223, 223, 223);
+}
+
+#CSheadInfo, #GSheadInfo {
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+}
+
+#CSheadInfoBox, #GSheadInfoBox {
+	width: calc(100% - 20px);
+	max-width: 800px;
+	height: fit-content;
+	margin: auto;
+	margin-top: 15px;
+	display: flex;
+	flex-direction: row;
+}
+
+@media screen and (max-width: 800px) {
+	#CSheadInfoBox, #GSheadInfoBox {
+		width: calc(100% - 10px);
+	}
+}
+
+#GSHImgBox {
+	width: 100px;
+	height: 100px;
+	max-width: 100px;
+	max-height: 100px;
+	overflow: hidden;
+	position: relative;
+}
+
+#CSHImg {
+	width: 100px;
+	height: 100px;
+	margin: auto 0;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 3px;
+}
+
+.GSHImgEdit {
+	width: 100px;
+	height: fit-content;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 3px;
+	position: absolute;
+	max-width: 100px;
+	max-height: 100px;
+	color: white;
+	font-weight: 500;
+	font-family: 'Noto', sans-serif;
+	z-index: 3;
+	text-align: center;
+	margin-top: 40px;
+	pointer-events: none;
+}
+
+.GSHImg {
+	width: 100px;
+	height: 100px;
+	margin: auto 0;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 3px;
+	position: absolute;
+	pointer-events: none;
+	max-width: 100px;
+	max-height: 100px;
+	z-index: 4;
+}
+
+.CanEditGroupImage:hover {
+	.GSHImg {
+		filter:blur(5px);
+		z-index: 2;
+	}
+}
+
+#GSHImgInput {
+	transform: scale(5);
+	position: absolute;
+	margin: auto;
+	margin-left: 400px;
+	margin-top: 40px;
+	opacity: 0;
+}
+
+#CSHinfos, #GSHinfos {
+	height: 120px;
+	width: calc(100% - 120px);
+	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+
+}
+
+#CSHuid, .GSHuid, .GSHuidEdit {
+	width: calc(100% - 5px);
+	height: fit-content;
+	margin-top: 20px;
+	overflow: hidden;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Noto', sans-serif;
+}
+
+.GSHuid {
+	width: fit-content;
+	max-width: calc(100% - 5px);
+	word-wrap: break-word;
+}
+
+.GSHuid:hover {
+	background-color: rgb(223, 223, 223);
+}
+
+.GSHuidEdit {
+	display: flex;
+	flex-direction: row;
+}
+
+#GSHuidEditInput {
+	width: calc(100% - 110px);
+}
+
+#GSHuidEditConfirm {
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Kanit', sans-serif;
+	width: fit-content;
+	height: fit-content;
+	background-color: rgb(240, 240, 240);
+	box-shadow: 0 0 5px rgba(54, 54, 54, 0.514);
+	padding: 2px 10px;
+	margin: auto 0;
+	user-select: none;
+	cursor: pointer;
+	border-radius: 3px;
+	margin-left: 10px;
+}
+
+#CSHname {
+	width: calc(100% - 5px);
+	height: fit-content;
+	overflow: hidden;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Noto', sans-serif;
+}
+
+#CSHprofil, #GSHnbmiInv, #GSHnbmiInv2 {
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Kanit', sans-serif;
+	width: fit-content;
+	height: fit-content;
+	background-color: rgb(240, 240, 240);
+	box-shadow: 0 0 5px rgba(54, 54, 54, 0.514);
+	padding: 2px 10px;
+	margin: 0 auto;
+	margin-top: 10px;
+	user-select: none;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+#GSHnbmiInv,  #GSHnbmiInv2 {
+	margin: 0;
+	margin-left: 15px;
+	margin-top: 0px;
+}
+
+#CSHprofil:hover, #GSHnbmiInv:hover, #GSHnbmiInv2:hover, #GSHuidEditConfirm:hover {
+	background-color: rgb(223, 223, 223);
+}
+
+#GSHnbmi, #GSHnbmi2 {
+	height: fit-content;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+}
+
+#GSHnbmi2 {
+	width: calc(100% - 20px);
+	margin-top: 0px;
+	margin: 0 auto;
+	display: none;
+}
+
+#GSHnbmiNB, #GSHnbmiNB2 {
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'kanit', sans-serif;
+	width: fit-content;
+	margin: auto 0;
+}
+
+@media screen and (max-width: 800px) {
+	#GSHnbmi2 {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 15px;
+	}
+
+	#GSHnbmi {
+		display: none;
+	}
+}
+
+#GSmembers {
+	width: calc(100% - 20px);
+	max-width: 600px;
+	height: fit-content;
+	max-height: 500px;
+	margin: 0 auto;
+	overflow-y: scroll;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.GSmembersProfil {
+	width: 100%;
+	height: 50px;
+
+	display: flex;
+	flex-direction: row;
+	background-color: rgb(240, 240, 240);
+	padding: 5px 0;
+	position: relative;
+
+	overflow: hidden;
+}
+
+#GSleave {
+	background-color: rgb(240, 240, 240);
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Kanit', sans-serif;
+	box-shadow: 0 0 5px rgba(54, 54, 54, 0.514);
+	width: fit-content;
+	height: fit-content;
+	margin: 0 auto;
+	margin-top: 10px;
+	user-select: none;
+	cursor: pointer;
+	padding: 2px 15px;
+	color: rgb(236, 0, 0);
+}
+
+#GSleave:hover {
+	background-color: rgb(223, 223, 223);
+}
+
+.GSMPimg {
+	height: 45px;
+	width: 45px;
+	overflow: hidden;
+	margin: auto 0;
+	margin-left: 5px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.GSMPuid {
+	height: fit-content;
+	width: calc(100% - 130px);
+	overflow: hidden;
+	margin: auto 0;
+	margin-left: 10px;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Noto', sans-serif;
+}
+
+.GSMPmore {
+	height: 45px;
+	width: 45px;
+	background-color: rgb(240, 240, 240);
+	margin: auto 0;
+	margin-left: 10px;
+	border-radius: 50%;
+	user-select: none;
+	cursor: pointer;
+}
+
+.GSMPmorePanelBox {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	display: grid;
+	align-items: center;
+	top: -0px;
+}
+
+.GSMPmorePanel {
+	height: 100%;
+	width: 100%;
+	max-height: 100%;
+	max-width: 100%;
+	background-color: rgba(197, 197, 197, 0.349);
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	pointer-events: auto;
+	position: relative;
+}
+
+.GSMPmoreButton {
+	width: fit-content;
+	height: fit-content;
+	margin: auto 0;
+	margin-right: 20px;
+	padding: 2px 5px;
+	background-color: white;
+	border-radius: 2px;
+	color: black;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+	user-select: none;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.GSMPmoreButton:hover {
+	background-color: whitesmoke;
+	transform: scale(1.2);
+}
+
+.GSMPmoreKick {
+	color: red;
+}
+
+.GSMPmore:hover {
+	background-color: rgb(223, 223, 223);
+}
+
+.GSMPmoreIcon {
+	transform: scale(1.8);
+	height: fit-content;
+	width: fit-content;
+	margin: auto;
+	margin-top: 12px;
+}
+
+
+.message-box {
+	height: fit-content;
+	min-height: 50px;
+	width: calc(100% - 25px);
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	margin-top: 5px;
+	margin-left: 4px;
+	padding: 0 10px;
+
+	display: flex;
+	flex-direction: row;
+}
+
+.message-box-follow {
+	height: fit-content;
+	width: calc(100% - 25px);
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	margin-left: 4px;
+	padding: 0 10px;
+
+	display: flex;
+	flex-direction: row;
+}
+
+.message-picture{
+	height: 40px;
+	width: 40px;
+	object-fit: cover;
+	object-position: center;
+	overflow: hidden;
+	margin-top: 5px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+
+.message-body {
+	height: fit-content;
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+}
+
+.message-head {
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+}
+
+.message-sender {
+	height: fit-content;
+	width: fit-content;
+	min-width: fit-content;
+	max-width: calc(100% - 40px);
+	overflow: hidden;
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    margin: 0 0;
+    margin-top: -3px;
+}
+
+.message-date {
+	height: fit-content;
+	width: fit-content;
+	color: #95a5a6;
+	font-size: 10px;
+	margin: 0;
+	margin-top: 13px;
+	margin-left: 5px;
+	font-family: 'Noto';
+}
+
+.message-content {
+	height: fit-content;
+	width: fit-content;
+	color: #2c3e50;
+	margin: 0;
+	word-wrap: break-word;
+	word-break: break-all;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Noto', sans-serif;
+}
+
+.message-content-follow {
+	height: fit-content;
+	width: fit-content;
+	color: #2c3e50;
+	margin: 0;
+	margin-left: 50px;
+	word-wrap: break-word;
+	word-break: break-all;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Noto', sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+	.message-picture{
+		display: none;
+	}
+	
+	.message-content-follow {
+		margin-left: 0px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.message-date {
+		width: 15px;
+		height: fit-content;
+		margin-top: 5px;
+		margin-left: 10px;
+	}
+}
+
+.inviteUserToGroupPanel {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(129, 129, 129, 0.438);
+	pointer-events: auto;
+	z-index: 4;
+	display: grid;
+	align-items: center;
+}
+
+.backInviteUserToGroup {
+	height: 600px;
+	width: 400px;
+	margin: 0 auto;
+	background-color: white;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.InviteUserToGroupHead {
+	height: 55px;
+	width: 100%;
+	display: grid;
+	align-items: center;
+}
+
+.InviteUserToGroupHeadTitle {
+	height: fit-content;
+	width: fit-content;
+	margin: auto;
+}
+#InviteUserToGroupHeadSearch {
+	font-family: "Raleway", sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	height: 20px;
+	width: calc(100% - 60px);
+	margin: 0 auto;
+}
+
+.InviteUserToGroupBody {
+	height: 510px;
+	width: 100%;
+	background-color: whitesmoke;
+}
+
+.InviteUserToGroupFoot {
+	height: 35px;
+	width: 100%;
+	display: grid;
+	align-items: center;
+}
+
+.InviteUserToGroupFootBack {
+	height: fit-content;
+	width: fit-content;
+	cursor: pointer;
+	user-select: none;
+	margin: auto;
+	padding: 2px 6px;
+	border-radius: 3px;
+	box-shadow: #2c3e50;
+}
+
+.InviteUserToGroupFootBack:hover {
+	background-color: whitesmoke;
+}
+
+.battleFromChatBox {
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	background-color: rgba(128, 128, 128, 0.692);
+	pointer-events: auto;
+	user-select: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	top: 0;
+	right: 0;
+	z-index: 5;
+}
+
+.battleFromChatPanel {
+	height: fit-content;
+	width: fit-content;
+	background-color: white;
+	border-radius: 7px;
+	box-shadow: 4px 4px 8px grey;
+	padding: 6px 10px;
+	margin: 0 auto;
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+#battleFromChatCancel {
+	width: 50%;
+	margin: 0 auto;
+	background-color: red;
+	border: 0;
+	color: white;
+	font-weight: 600;
+	border-radius: 3px;
+}
+#battleFromChatCancel:hover {
+	background-color: rgb(187, 0, 0);
+}
+
+.hidden {
+	display: none;
+}

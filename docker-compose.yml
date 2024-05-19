@@ -1,0 +1,71 @@
+services:
+  nginx:
+    build:
+      context: ./
+      dockerfile: config/Nginx/Dockerfile
+      args:
+        VERSION_NGINX: ${VERSION_NGINX}
+    env_file:
+      - .env
+    ports:
+      - ${PORT_NGINX_HOST}:${PORT_NGINX}
+    networks:
+      - proxy-net
+    restart: always
+
+  frontend:
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: config/frontend/Dockerfile
+      args:
+        VERSION_FRONT: ${VERSION_FRONT}
+        PORT_FRONT: ${PORT_FRONT}
+    expose:
+      - "${PORT_FRONT}"
+    networks:
+      - proxy-net
+    restart: always
+
+  backend:
+    depends_on:
+      db:
+        condition: service_healthy
+    build:
+      context: .
+      dockerfile: config/backend/Dockerfile
+    expose:
+      - "${PORT_BACK}"
+    env_file:
+      - .env
+    networks:
+      - proxy-net
+    restart: always
+
+  db:
+    container_name: database
+    image: postgres:${VERSION_POSTGRES}
+    healthcheck:
+      test: 'psql -c --username "$POSTGRES_USER" --dbname "$POSTGRES_DB"'
+      interval: 10s
+      timeout: 3s
+      retries: 2
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    env_file:
+      - .env
+    networks:
+      - proxy-net
+    restart: always
+
+volumes:
+  db-data:
+
+networks:
+  proxy-net:
+    name: proxy-net
+    driver: bridge

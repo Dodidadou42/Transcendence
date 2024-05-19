@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+.tournamentBody{
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    position: relative;
+
+    /* background-color: green; */
+}
+
+.tp1 {
+    height: 80px;
+    width: 1000px;
+    position: absolute;
+    right: calc(50vw - 500px);
+    top: calc(50px + (300px - 40px));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+
+    /* background-color: red; */
+}
+
+.match {
+    width: 200px;
+    height: 80px;
+    max-height: 80px;
+    background-color: white;
+    /* border: 2px solid black; */
+    box-shadow: 2px 2px 10px grey;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+#match1 {
+    border-right: 2px solid black;
+}
+#match2 {
+    border-left: 2px solid black;
+}
+#match3 {
+    border-bottom: 2px solid black;
+}
+#match4 {
+    border-top: 2px solid black;
+}
+.match:hover {
+    transform: scale(1.1);
+}
+
+.tournamentTreeLineX {
+    height: 2px;
+    width: calc(100% - (2 * 200px));
+    background-color: black;
+    margin: auto 0;
+}
+
+.tp2 {
+    height: 600px;
+    width: 200px;
+    position: absolute;
+    right: calc(50vw - 100px);
+    top: 50px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.MatchPanel {
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    right: calc(50vw - 250px);
+    top: 200px;
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.MatchPaneInfo {
+    height: 230px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.MatchPanelInfoPlayers {
+    height: 90%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    margin-left: 15px;
+}
+
+.title {
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+}
+
+.MatchPanelInfoPlayersTitle {
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.MatchPanelButtons {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.MatchPanelButtonsStatus {
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    text-align: center;
+    color: grey;
+}
+
+.tournamentReadyButtonOn {
+    height: fit-content;
+    width: fit-content;
+    padding: 2px 9px;
+    font-size: 15px;
+    background-color: rgb(61, 201, 5);
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    border-radius: 7px;
+    margin: 0 auto;
+    margin-top: 3px;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px rgba(163, 163, 163, 0.753);
+    transition: 0.2s;
+}
+
+.tournamentReadyButtonOn:hover {
+    transform: scale(1.1);
+}
+
+.MatchPanelButtonsLoad {
+    width: fit-content;
+    height: fit-content;
+    margin: 5px auto;
+    transform: scale(0.9);
+}
+
+.loader {
+    width: 28px;
+    height: 28px;
+    border: 3px solid #000000;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+
+.tournamentTreeLineY {
+    width: 2px;
+    height: calc(100% - (160px));
+    background-color: black;
+    margin: 0 auto;
+}
+
+.matchProfile {
+    height: 40px;
+    min-height: 40px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.matchProfile:hover {
+    background-color: whitesmoke;
+}
+
+.matchTitle {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    top: -110px;
+    text-align: center;
+}
+
+.matchTitleD {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    top: 3px;
+    text-align: center;
+}
+
+.matchProfilePicture {
+    height: 35px;
+    width: 35px;
+    border-radius: 4px;
+    margin: auto 5px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.matchProfileNameBox {
+    height: fit-content;
+    width: 130px;
+    max-width: 130px;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.matchProfileName {
+    height: fit-content;
+    width: 130px;
+    max-width: 130px;
+    margin: auto 0;
+    font-size: 10px;
+    font-family: 'Kanit', sans-serif;
+    word-break: break-all;
+}
+
+.matchProfileNameId {
+    height: fit-content;
+    width: 130px;
+    max-width: 130px;
+    margin: auto 0;
+    font-size: 7px;
+    color: grey;
+    font-family: 'Kanit', sans-serif;
+    word-break: break-all;
+}
+
+.matchProfileIcon {
+    height: fit-content;
+    width: fit-content;
+    margin: auto 0;
+}
+
+.matchProfileIconImg {
+    height: 30px;
+    width: 30px;
+    display: grid;
+    overflow: hidden;
+    margin: auto 0;
+}
+
+.matchProfileIconImg_ {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1.2);
+    transform-origin: center;
+    align-self: center;
+}
+
+.hasLost {
+    background-color: rgba(83, 83, 83, 0.692);
+}
+.hasLost:hover {
+    background-color: rgba(83, 83, 83, 0.692);
+}
+
+.MatchPanelInfoStatus {
+    width: 250px;
+    height: 90%;
+    margin: auto 0;
+    margin-left: 5px;
+    background-color: whitesmoke;
+}
+
+.MatchPanelInfoStatusTitle {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+
+.tournamentLeaveButton {
+    height: fit-content;
+    width: fit-content;
+    padding: 0px 7px;
+    background-color: rgb(226, 0, 0);
+    color: white;
+    font-size: 12px;
+    font-family: 'Kanit', sans-serif;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 6px grey;
+    transition: 0.2s;
+    margin: 0 auto;
+    margin-top: 0px;
+    transform: scale(0.8);
+}
+
+.tournamentLeaveButton:hover {
+    transform: scale(1.1);
+}
+
+.confirmLeaveOut {
+    position: fixed;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(150, 150, 150, 0.712);
+    pointer-events: auto;
+    display: grid;
+}
+
+.confirmLeavePanel {
+    align-self: center;
+    height: 150px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px gray;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.confirmLeavePanelTitle {
+    width: 100%;
+    text-align: center;
+    height: fit-content;
+    margin-top: 15px;
+    font-size: 20px;
+    color: black;
+    font-family: 'Kanit', sans-serif;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-weight: 500;
+}
+
+.confirmLeavePanelButtons {
+    height: fit-content;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.confirmLeaveTournamentButton {
+    height: fit-content;
+    width: fit-content;
+    padding: 2px 7px;
+    background-color: white;
+    box-shadow: 2px 2px 6px grey;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    font-family: 'Kanit', sans-serif;
+    transition: 0.2s;
+    user-select: none;
+    cursor: pointer;
+}
+
+.confirmLeaveTournamentButton:hover {
+    transform: scale(1.2);
+}
+
+.ChangeTournamentPseudoPanelTitle {
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ChangeTournamentPseudoPanel, .ChangeTournamentPseudoBox {
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+
+.countBox {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    pointer-events: auto;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    background-color: rgba(168, 168, 168, 0.637);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.countPanel {
+    position: relative;
+    top: -50px;
+    margin: auto;
+    height: 150px;
+    width: 400px;
+    /* background-color: white; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 400px;
+}
+
+.countValue {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    font-size: 100px;
+    color: orangered;
+    text-shadow: 2px 2px 4px black;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    left: 1000px;
+    animation: startMatchCount 3.5s ease-in-out forwards;
+}
+
+@keyframes startMatchCount {
+    0% {
+        left: 1000px;
+    }
+    100% {
+        left: -665px;
+    }
+}
+
+.hidden {
+    display: none;
+}

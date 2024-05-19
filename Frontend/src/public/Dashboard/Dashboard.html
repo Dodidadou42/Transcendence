@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="icon" href="./home.ico" type="image/x-icon">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+		<style>
+			.hidden {
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	<div id="page_dashboard">
+		<nav id="TopBar_dashboard" class="topBar_dashboard">
+			<section class="topBar1_dashboard">
+				<div id="alignTb_dashboard" class="alignTb_dashboard">
+					<h1 class="tbTitle_dashboard" id="PageTitle_dashboard">Loading ...</h1>
+					<div id="tbCat_dashboard">
+						<div id="tbHome_dashboard" class="choice_dashboard"><span class="material-symbols-outlined icon_dashboard">home</span><div class="catName_dashboard">Home</div></div>
+						<div id="tbplay_dashboard" class="choice_dashboard"><span class="material-symbols-outlined icon_dashboard">Gamepad</span><div class="catName_dashboard">Play</div></div>
+						<div id="tbContact_dashboard" class="choice_dashboard"><span class="material-symbols-outlined icon_dashboard">Group</span><div class="catName_dashboard">Social</div></div>
+						<div id="tbProfil_dashboard" class="choice_dashboard"><span class="material-symbols-outlined icon_dashboard">person</span><div class="catName_dashboard">Profile</div></div>
+						<div id="tbParameter_dashboard" class="choice_dashboard"><span class="material-symbols-outlined icon_dashboard">settings</span><div class="catName_dashboard">Settings</div></div>
+					</div>
+					<div id="burgerMenu_dashboard" class="burgerM_dashboard">
+						<div class="bar_dashboard"></div>
+						<div class="bar_dashboard"></div>
+						<div class="bar_dashboard"></div>
+					</div>
+				</div>
+			</section>
+			<section id="TopBar2_dashboard" class="topBar2_dashboard">
+				<div class="alignTb_dashboard">
+					<div class="balance_dashboard"></div>
+					<div class="choicePanelS_dashboard">
+						<div class="case_dashboard">
+							<div class="casePanel_dashboard hidden" id="casePanel1_dashboard">
+								<a class="casePanelOpt_dashboard" href="#dashboard_home">Home</a>
+							</div>
+						</div>
+						<div class="case_dashboard">
+							<div class="casePanel_dashboard hidden" id="casePanel2_dashboard">
+								<a class="casePanelOpt_dashboard" id="PlayButtonIntoLobby_dashboard">Lobby</a>
+							</div>
+						</div>
+						<div class="case_dashboard">
+							<div class="casePanel_dashboard hidden" id="casePanel3_dashboard">
+								<a class="casePanelOpt_dashboard" href="#dashboard_social">Contacts</a>
+							</div>
+						</div>
+						<div class="case_dashboard">
+							<!-- <div class="casePanel hidden" id="casePanel5"></div> -->
+						</div>
+						<div class="case_dashboard">
+							<div class="casePanel_dashboard hidden" id="casePanel4_dashboard">
+								<a class="casePanelOpt_dashboard" href="#contact">Contact</a>
+								<a class="casePanelOpt_dashboard" href="#policy">Policy</a>
+								<a class="casePanelOpt_dashboard" id="out2_dashboard">Sign out</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</nav>
+		<section id="burgerPanelOut_dashboard" class="burgerPanelOut_dashboard burgerClosed_dashboard">
+			<div id="burgerPanel_dashboard" class="burgerPanel_dashboard">
+				<header id="bPHead_dashboard" class="bPHead_dashboard">
+					<div class="bpHeadTitle_dashboard">Settings</div>
+					<div><span class="material-symbols-outlined cIcon_dashboard" id="crossbP_dashboard">close</span></div>
+				</header>
+				<section id="bPBody_dashboard" class="bPBody_dashboard">
+					<div id="bPHome_dashboard" class="choicebP_dashboard"><div class="catNamebP_dashboard"><a href="#dashboard_home">Home</a></div><span class="material-symbols-outlined Gicon_dashboard">home</span></div>
+					<div id="bPContact_dashboard" class="choicebP_dashboard"><div class="catNamebP_dashboard"><a href="#dashboard_social">Social</a></div><span class="material-symbols-outlined Gicon_dashboard">send</span></div>
+					<div id="bPPlay_dashboard" class="choicebP_dashboard"><div class="catNamebP_dashboard"><a id="MainPlayButtonIntoLobby_dashboard">Play</a></div><span class="material-symbols-outlined Gicon_dashboard">Gamepad</span></div>
+					<div id="bPProfil_dashboard" class="choicebP_dashboard"><div class="catNamebP_dashboard"><a href="#dashboard_profil">Profile</a></div><span class="material-symbols-outlined Gicon_dashboard">person</span></div>
+					<div id="bPContact_dashboard" class="choicebP_dashboard"><div class="catNamebP_dashboard"><a href="#contact">Contacts</a></div><span class="material-symbols-outlined Gicon_dashboard">Mail</span></div>
+					<div id="bPPrivacy_dashboard" class="choicebP_dashboard"><div class="catNamebP_dashboard"><a href="#policy">Privacy policy</a></div><span class="material-symbols-outlined Gicon_dashboard">Lock</span></div>
+				</section>
+				<footer id="bPFoot_dashboard">
+					<button id="out_dashboard">Sign out <span class="material-symbols-outlined" id="SOicon_dashboard">chevron_right</span></button>
+				</footer>
+			</div>
+		</section>
+		<section id="child1_dashboard">
+
+		</section>
+		<div id="NotificationsContainer"></div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script type="module" src="./Dashboard.js"></script>
+	<script src="./loading.js" defer></script>
+</html>

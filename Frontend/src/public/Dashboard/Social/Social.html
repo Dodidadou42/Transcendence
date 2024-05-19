@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.hidden {
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	<div id="body">
+		<section id="rightNavBarOut">
+            <div id="rightNavBar">
+                <div id="navHead">
+                    <div class="navHeadCat" id="allSocial"><span class="material-symbols-outlined navHeadCatIcon">for_you</span><div class="navHeadCatTitle">All</div></div>
+                    <div class="navHeadCat" id="contactCat"><span class="material-symbols-outlined navHeadCatIcon">account_circle</span><div class="navHeadCatTitle">Contact</div></div>
+                    <div class="navHeadCat" id="groupCat"><span class="material-symbols-outlined navHeadCatIcon">groups</span><div class="navHeadCatTitle">Groups</div></div>
+                </div>
+                <div id="navBodyContact">
+                    <div id="navContact">
+                        <div id="noconv">No conversation yet...</div>
+
+                    </div>
+                </div>
+                <div id="navBodyGroup" class="hidden">
+                    <div id="navGroup">
+                        <div id="noconvgroup" class="">No group yet ...</div>
+
+                        <!-- <div class="NGp"> 
+                            <div class="NGPInfo">
+                                <img  class="NGPimg" src="https://media.ouest-france.fr/v1/pictures/61b5e3e7d938ad9c98281e1ac1ec0692-16474689.jpg?width=1260&client_id=eds&sign=11e7b2ac3bd3b472dcd9dc0c96dbc9fda2e10f4e14692f0fe2d334b42f149e42">
+                                <div class="NGPu_id">les ratatouille</div>
+                            </div>
+                            <div class="NGPmore"><span class="material-symbols-outlined">send</span></div>
+                        </div> -->
+                    </div>
+                </div>
+                <div id="navFoot" class="navFoot">
+                    <div id="AddGroupB" class="navFootAddGroup hidden">Create a group</div>
+                </div>
+            </div>
+        </section>
+        <section id="content">
+
+        </section>
+        <div class="more hidden" id="more">
+            <div id="moreChat"><div>chat</div></div>
+            <div id="moreProfil"><div>see profile</div></div>
+            <div id="noreCancel"><div>cancel</div></div>
+        </div>
+        <div class="createGroupBody hidden" id="createGroupBody">
+            <div id="createGroupForm" class="createGroupForm hidden">
+                <div id="createGroupFormTitle">
+                    <span>Create a Group</span>
+                </div>
+                <div id="createGroupFormBody">
+                    <div class="cgfDiv"><label for="cgfName" id="cgfNameLabel" class="cgfLabel">Name : </label><input type="text" id="cgfName" class="cgfInput" minlength="5" maxlength="30"></div>
+                    <div class="cgfDiv"><label for="cgfInputPicture" id="cgfNameLabel" class="cgfLabel">Picture : </label><input type="file" id="cgfInputPicture"></div>
+                    <div class="cgfDiv">Members :</div>
+                    <div id="cgfMembers">
+                    
+                    </div>
+                    <div class="cgfDiv"><button id="addPeopleCgf">Add people</button></div>
+                </div>
+                <div id="createGroupFormFoot">
+                    <div id="CGFcreate" class="CGFcreate createDisable">create</div>
+                    <div id="CGFcancel">cancel</div>
+                </div>
+            </div>
+            <div class="createGroupBodyLoader" id="CGFLoad"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+        </div>
+        <div id="createGroupInviteForm" class="createGroupInviteForm hidden">
+            <div class="CGFInviteForm hidden" id="CGFInviteForm">
+                <div class="CGFInviteFormHead">
+                    <span>Invite someone</span>
+                    <input type="text" maxlength="45" id="CGFInviteFormHeadInput"></input>
+                </div>
+                <div class="CGFInviteFormBody" id="CGFInviteFormBody">
+                    <!-- <div class="personToGroupInvite">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=1200&h=1200&s=1">
+                        <span>lfantine</span>
+                        <button>add</button>
+                    </div> -->
+                    <div class="insearchpeopleload" id="insearchpeopleload"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+                </div>
+                <div class="CGFInviteFormFoot">
+                    <button id="CGFInviteCancel">Cancel</button>
+                </div>
+            </div>
+            <div class="createGroupInviteLoader" id="createGroupInviteLoader"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+        </div>
+	</div>
+</html>

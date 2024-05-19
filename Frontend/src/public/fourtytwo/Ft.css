@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: url('./b5.jpg');
+	background-size: cover;
+	background-repeat: repeat;
+	background-attachment: fixed;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f0f0f0;
+}
+  
+.loading-screen {
+	text-align: center;
+}
+
+.loader {
+	border: 4px solid #f3f3f3;
+	border-top: 4px solid #3498db;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	animation: spin 1s linear infinite;
+	margin: 0 auto 20px;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+p {
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	color: #333;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pong Game</title>
+        <style>
+            .hidden {
+                visibility: hidden;
+            }
+        </style>
+    </head>
+    <body id="bodyPongGame">
+        <div id="content_game">
+            <canvas class="font-family-pong-game" id="canvasGame_game" width="1200" height="750"></canvas>
+        </div>
+        
+        <div id="WinnerScreen_game" class="winner-screen_game hidden">
+            <h1 class="main-title_game">WIN</h1>
+            <h2 class="secondary-title_game">Returning to main menu</h2>
+        </div>
+        <div id="LoserScreen_game" class="loser-screen_game hidden">
+            <h1 class="main-title_game">DEFEAT</h1>
+            <h2 class="secondary-title_game">Returning to main menu</h2>
+        </div>
+        <div id="TimerScreen_game" class="timer-screen_game hidden">
+            <h1 id="TimerScreenNumber_game" class="main-title_game">3</h1>
+        </div>
+        <div id="WaitingScreen_game" class="waiting-screen_game">
+            <h2 class="main-title_game">Please wait other players</h2>
+        </div>
+    </body>
+</html>

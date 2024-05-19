@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.hidden {
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	<div id="matchmakingBody" class="matchmakingBody">
+		<h1 id="Matchmakingtitle">Matchmaking in progress . . .</h1>
+		<div id="matchmakingLoaderWait" class="matchmakingLoaderWait"><span class="loader"></span></div>
+		<div id="MatchFoundPanel2p" class="MatchFoundPanel hidden">
+			<div class="matchProfileOut">
+				<div class="matchProfile">
+					<img id="matchP1_Pic" src="./noUser.png" class="matchProfilePicture">
+					<span id="matchP1_Icon" class="material-symbols-outlined matchProfileIcon hidden">done</span>
+					<div id="matchP1_Name" class="matchProfileName">waiting for player . . .</div>
+				</div>
+			</div>
+			<div>
+				<div id="matchStatus2p" class="matchStatus"><span class="loader"></span></div>
+			</div>
+			<div class="matchProfileOut">
+				<div class="matchProfile2">
+					<div id="matchP2_Name" class="matchProfileNameR">waiting for player . . .</div>
+					<span id="matchP2_Icon" class="material-symbols-outlined matchProfileIcon hidden">done</span>
+					<img id="matchP2_Pic" src="./noUser.png" class="matchProfilePicture">
+				</div>
+			</div>
+		</div>
+		<div id="MatchFoundPanel4p" class="MatchFoundPanel hidden">
+			<div class="matchProfileOut">
+				<div class="matchProfile">
+					<img id="matchP1Pic" src="./noUser.png" class="matchProfilePicture">
+					<div id="matchP1Name" class="matchProfileName">waiting for player . . .</div>
+					<span id="matchP1Icon" class="material-symbols-outlined matchProfileIcon hidden">done</span>
+				</div>
+				<div class="matchProfile">
+					<img id="matchP3Pic" src="./noUser.png" class="matchProfilePicture">
+					<div id="matchP3Name" class="matchProfileName">waiting for player . . .</div>
+					<span id="matchP3Icon" class="material-symbols-outlined matchProfileIcon hidden">done</span>
+				</div>
+			</div>
+			<div>
+				<div id="matchStatus4p" class="matchStatus"><span class="loader"></span></div>
+			</div>
+			<div class="matchProfileOut">
+				<div class="matchProfile2">
+					<span id="matchP2Icon" class="material-symbols-outlined matchProfileIcon hidden">done</span>
+					<div id="matchP2Name" class="matchProfileNameR">waiting for player . . .</div>
+					<img id="matchP2Pic" src="./noUser.png" class="matchProfilePicture">
+				</div>
+				<div class="matchProfile2">
+					<span id="matchP4Icon" class="material-symbols-outlined matchProfileIcon hidden">done</span>
+					<div id="matchP4Name" class="matchProfileNameR">waiting for player . . .</div>
+					<img id="matchP4Pic" src="./noUser.png" class="matchProfilePicture">
+				</div>
+			</div>
+		</div>
+		<div id="cancelMatchmakingBack">Cancel</div>
+	</div>
+
+	<div id="joinGroupBody" class="joinGroupBody hidden">
+		<h1 id="CGtitleOther">Custom Game</h1>
+		<div id="customModeOther">
+			<div id="customGamemodeOther"><div id="ModeTitleOther">Mode: </div><div id="cgModeOther">Loading . . .</div></div>
+			<div id="customPowerupsOther"><div id="PowerTitleOther">Powerups: </div><div id="cgPowerOther">Loading . . .</div></div>
+		</div>
+        <div id="customPlayersOther">
+			<div id="customPlayersTitleOther">Group</div>
+			<div id="customPlayersBoxOther">
+				<div class="customgamePlayerPlace" id="cgMainPlayerOther">
+					<div class="customgamePlayerInfos">
+						<img id="cgMainPlayerImgOther" src="https://xmple.com/wallpaper/gradient-blue-linear-purple-5120x2160-c2-8a2be2-00ced1-a-15-f-14.svg" class="cgPlayerImg">
+						<div id="cgMainPlayerNameOther" class="cgPlayerName">Loading . . .</div>
+					</div>
+					<div class="customgamePlayerButton">
+					</div>
+				</div>
+
+				<div class="customgamePlayerPlace" id="cgPlayer2Other">
+					<div class="customgamePlayerInfos">
+						<img id="cgPlayer2ImgOther" src="./noUser.png" class="cgPlayerImg">
+						<div id="cgPlayer2NameOther" class="cgWaitName">waiting for player. . .</div>
+					</div>
+					<div class="customgamePlayerButton">
+					</div>
+				</div>
+
+				<div class="customgamePlayerPlace" id="cgPlayer3Other">
+					<div class="customgamePlayerInfos">
+						<img id="cgPlayer3ImgOther" src="./noUser.png" class="cgPlayerImg">
+						<div id="cgPlayer3NameOther" class="cgWaitName">waiting for player. . .</div>
+					</div>
+					<div class="customgamePlayerButton">
+					</div>
+				</div>
+
+				<div class="customgamePlayerPlace" id="cgPlayer4Other">
+					<div class="customgamePlayerInfos">
+						<img id="cgPlayer4ImgOther" src="./noUser.png" class="cgPlayerImg">
+						<div id="cgPlayer4NameOther" class="cgWaitName">waiting for player. . .</div>
+					</div>
+					<div class="customgamePlayerButton">
+					</div>
+				</div>
+
+				<div class="cgPlayerRecap">
+					<div id="cgPlayerCountOther">0/4 Players</div>
+				</div>
+
+			</div>
+		</div>
+		<div id="CGGroupLeaveOther">Leave group</div>
+    </div>
+	<section id="customGameBody" class="customGameBody hidden">
+		<div id="ComeBackToSelection">return to selection</div>
+		<h1 id="CGtitle">Custom Game</h1>
+		<div id="ModeTitle">Mode</div>
+		<div id="mode">
+			<div class="modeLabel selection1v1AnimationLeft" id="mode1v1Custom"><div>1v1</div></div>
+		    <div class="modeLabel selection1v1AnimationRight" id="mode2v2Custom"><div>2v2</div></div>
+		</div>
+		<div id="withPowerups">
+			<div id="withPowerupsLabel">PowerUps :</div>
+			<div id="powerupsWheelsBox">
+				<div id="powerupsWheels" class="ApowerupsCustomOn">
+					<div id="cgpuON">ON</div>
+					<div id="cgpuOFF">OFF</div>
+				</div>
+			</div>
+		</div>
+		<div id="customPlayers">
+			<div id="customPlayersTitle">Players</div>
+			<div id="customPlayersBox">
+				<div class="customgamePlayerPlace" id="cgMainPlayer">
+					<div class="customgamePlayerInfos">
+						<img id="cgMainPlayerImg" src="./noUser.png" class="cgPlayerImg">
+						<div id="cgMainPlayerName" class="cgPlayerName">Loading . . .</div>
+					</div>
+					<div class="customgamePlayerButton">
+
+					</div>
+				</div>
+
+				<div class="customgamePlayerPlace" id="cgPlayer2">
+					<div class="customgamePlayerInfos">
+						<img id="cgPlayer2Img" src="./noUser.png" class="cgPlayerImg">
+						<div id="cgPlayer2Name" class="cgWaitName">waiting for player. . .</div>
+					</div>
+					<div class="customgamePlayerButton">
+						<div class="cgPlayerButtons" id="cgAddBotButton2">Add Bot</div>
+						<div class="cgPlayerButtons" id="cgInviteButton2">Invite</div>
+						<div class="cgPlayerButtons cgKickButton hidden" id="cgKickButton2">kick</div>
+					</div>
+				</div>
+
+				<div class="customgamePlayerPlace" id="cgPlayer3">
+					<div class="customgamePlayerInfos">
+						<img id="cgPlayer3Img" src="./cross.png" class="cgPlayerImg">
+						<div id="cgPlayer3Name" class="cgWaitName">waiting for player. . .</div>
+					</div>
+					<div class="customgamePlayerButton">
+						<div class="cgPlayerButtons" id="cgAddBotButton3">Add Bot</div>
+						<div class="cgPlayerButtons" id="cgInviteButton3">Invite</div>
+						<div class="cgPlayerButtons cgKickButton hidden" id="cgKickButton3">kick</div>
+					</div>
+				</div>
+
+				<div class="customgamePlayerPlace" id="cgPlayer4">
+					<div class="customgamePlayerInfos">
+						<img id="cgPlayer4Img" src="./cross.png" class="cgPlayerImg">
+						<div id="cgPlayer4Name" class="cgWaitName">waiting for player. . .</div>
+					</div>
+					<div class="customgamePlayerButton">
+						<div class="cgPlayerButtons" id="cgAddBotButton4">Add Bot</div>
+						<div class="cgPlayerButtons" id="cgInviteButton4">Invite</div>
+						<div class="cgPlayerButtons cgKickButton hidden" id="cgKickButton4">kick</div>
+					</div>
+				</div>
+
+				<div class="cgPlayerRecap">
+					<div id="cgPlayerCount">1/4 Players</div>
+				</div>
+
+			</div>
+		</div>
+		<div id="StartTheCustomGame" class="StartTheCustomGameON">Start</div>
+		<div class="moreSpaceBotton"></div>
+
+		<div id="invitePlayerPanel" class="invitePlayerPanelBox hidden">
+			<div id="invitePlayerPanelLayer">
+				<div id="invitePlayerPanelTitle">Invite a Player</div>
+				<div id="invitePlayerPanelSearch"><input id="invitePlayerPanelSearchInput" type="text"></input></div>
+				<div id="invitePlayerPaneldata">
+					<!-- <div class="invitePlayerPaneldataProfil">
+						<div class="invitePlayerPaneldataProfilInfos">
+							<img class="invitePlayerPaneldataProfilImg" src="https://xmple.com/wallpaper/gradient-blue-linear-purple-5120x2160-c2-8a2be2-00ced1-a-15-f-14.svg">
+							<div class="invitePlayerPaneldataProfilName">Lfantine</div>
+						</div>
+						<div class="invitePlayerPaneldataProfilButton">
+							<div class="invitePlayerPaneldataProfilButtonInvite">invite</div>
+						</div>
+					</div> -->
+					
+				</div>
+				<div id="invitePlayerPanelBack">Cancel</div>
+			</div>
+		</div>
+
+		<div id="addBotPanel" class="addBotPanelBox hidden">
+			<div id="addBotPanelLayer">
+				<div class="addBotPanelTitle">Choose a BOT</div>
+				<div class="addBotPanelSelection">
+					<div class="addBotPanelSelectionProfil">
+						<div class="addBotPanelSelectionProfilInfo">
+							<img class="addBotPanelSelectionProfilImg" src="./EasyBot.png">
+						    <div class="addBotPanelSelectionProfilName">Easy</div>
+						</div>
+						<div class="addBotPanelSelectionProfilButton">
+							<div id="addEasyBOTbutton" class="addBOTbutton">ADD</div>
+						</div>
+					</div>
+					<div class="addBotPanelSelectionProfil">
+						<div class="addBotPanelSelectionProfilInfo">
+							<img class="addBotPanelSelectionProfilImg" src="./MiddleBot.png">
+						    <div class="addBotPanelSelectionProfilName">Normal</div>
+						</div>
+						<div class="addBotPanelSelectionProfilButton">
+							<div id="addNormalBOTbutton" class="addBOTbutton">ADD</div>
+						</div>
+					</div>
+					<div class="addBotPanelSelectionProfil">
+						<div class="addBotPanelSelectionProfilInfo">
+							<img class="addBotPanelSelectionProfilImg" src="./HardBot.png">
+						    <div class="addBotPanelSelectionProfilName">Hard</div>
+						</div>
+						<div class="addBotPanelSelectionProfilButton">
+							<div id="addHardBOTbutton" class="addBOTbutton">ADD</div>
+						</div>
+					</div>
+				</div>
+				<div id="addBotPanelBack">Cancel</div>
+			</div>
+		</div>
+	</section>
+	<div id="count" class="countBox">
+		<div class="countPanel">
+			<div class="countValue">3</div>
+			<div class="countValue">2</div>
+			<div class="countValue">1</div>
+			<div class="countValue">Fight</div>
+		</div>
+	</div>
+</html>

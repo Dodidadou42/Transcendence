@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.hidden {
+				visibility: hidden;
+			}
+		</style>
+	</head>
+    <div class="body2_sgamedetails">
+        <div class="recap">
+            <div class="teams">
+                <div class="winners">
+                    <div class="section winners-section">
+                        <div class="participant-list" id="winnersList">
+                            <div id="leftParticipant" class="left-participant">
+                                <h2>WINNER</h2>
+                            </div>
+                            <div id="leftScore" class="left-score bold"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="losers">
+                    <div class="section losers-section">
+                        <div class="participant-list" id="losersList">
+                            <div id="rightScore" class="right-score bold"></div>
+                            <div id="rightParticipant" class="right-participant">
+                                <h2>LOSER</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stats">
+                <h2>Teams Statistics</h2>
+                <div class="sub-stats">
+                    <div class="sub-stats-left">
+                        <p id="powerupsActivatedLeft"></p>
+                    </div>
+                    <p>Powerups Activated</p>
+                    <div class="sub-stats-right">
+                        <p id="powerupsActivatedRight"></p>
+                    </div>
+                </div>
+                <div class="sub-stats">
+                    <div class="sub-stats-left">
+                        <p id="bonusActivatedLeft"></p>
+                    </div>
+                    <p>Bonus Activated</p>
+                    <div class="sub-stats-right">
+                        <p id="bonusActivatedRight"></p>
+                    </div>
+                </div>
+                <div class="sub-stats">
+                    <div class="sub-stats-left">
+                        <p id="malusActivatedLeft"></p>
+                    </div>
+                    <p>Malus Activated</p>
+                    <div class="sub-stats-right">
+                        <p id="malusActivatedRight"></p>
+                    </div>
+                </div>
+                <div class="sub-stats">
+                    <div class="sub-stats-left">
+                        <p id="highestPointsStreakLeft"></p>
+                    </div>
+                    <p>Highest Points Streak</p>
+                    <div class="sub-stats-right">
+                        <p id="highestPointsStreakRight"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="advanced-stats">
+                <div id="chartBonusStats" class="advanced-stats-left">
+                    <canvas id="chartBonus"></canvas>
+                    <canvas id="chartPointTime2"></canvas>
+                </div>
+                <div class="advanced-stats-right">
+                    <div class="advanced-stats-right-top">
+                        <h2>Advanced Statistics</h2>
+                        <div class="advanced-sub-stats">
+                            <div class="advanced-sub-stats-left">
+                                <p>Game Date</p>
+                            </div>
+                            <div class="advanced-sub-stats-right">
+                                <p id="gameDate"></p>
+                            </div>
+                        </div>
+                        <div class="advanced-sub-stats">
+                            <div class="advanced-sub-stats-left">
+                                <p>Game Duration</p>
+                            </div>
+                            <div class="advanced-sub-stats-right">
+                                <p id="gameDuration"></p>
+                            </div>
+                        </div>
+                        <div class="advanced-sub-stats">
+                            <div class="advanced-sub-stats-left">
+                                <p>Total Balls Hits</p>
+                            </div>
+                            <div class="advanced-sub-stats-right">
+                                <p id="totalBallsHits"></p>
+                            </div>
+                        </div>
+                        <div class="advanced-sub-stats">
+                            <div class="advanced-sub-stats-left">
+                                <p>Highest Balls Hits Streak</p>
+                            </div>
+                            <div class="advanced-sub-stats-right">
+                                <p id="highestBallsHitsStreak"></p>
+                            </div>
+                        </div>
+                        <div class="advanced-sub-stats">
+                            <div class="advanced-sub-stats-left">
+                                <p>Highest Balls Speed</p>
+                            </div>
+                            <div class="advanced-sub-stats-right">
+                                <p id="highestBallsSpeed"></p>
+                            </div>
+                        </div>
+                        <div class="advanced-sub-stats">
+                            <div class="advanced-sub-stats-left">
+                                <p>Total Powerups Activated</p>
+                            </div>
+                            <div class="advanced-sub-stats-right">
+                                <p id="totalPowerupsActivated"></p>
+                            </div>
+                        </div>
+                        <div class="advanced-sub-stats">
+                            <div class="advanced-sub-stats-left">
+                                <p>Total Freeze Powerups Activated</p>
+                            </div>
+                            <div class="advanced-sub-stats-right">
+                                <p id="totalFreezePowerupsActivated"></p>
+                            </div>
+                        </div>
+                        <div class="advanced-sub-stats">
+                            <div class="advanced-sub-stats-left">
+                                <p>Total Slow Powerups Activated</p>
+                            </div>
+                            <div class="advanced-sub-stats-right">
+                                <p id="totalSlowPowerupsActivated"></p>
+                            </div>
+                        </div>
+                        <div class="advanced-sub-stats">
+                            <div class="advanced-sub-stats-left">
+                                <p>Total Speed Powerups Activated</p>
+                            </div>
+                            <div class="advanced-sub-stats-right">
+                                <p id="totalSpeedPowerupsActivated"></p>
+                            </div>
+                        </div>
+                        <div class="advanced-sub-stats">
+                            <div class="advanced-sub-stats-left">
+                                <p>Total Multi-Balls Powerups Activated</p>
+                            </div>
+                            <div class="advanced-sub-stats-right">
+                                <p id="totalMultiBallsPowerupsActivated"></p>
+                            </div>
+                        </div>
+                        <div class="advanced-sub-stats">
+                            <div class="advanced-sub-stats-left">
+                                <p>Total Racket-Reduction Powerups Activated</p>
+                            </div>
+                            <div class="advanced-sub-stats-right">
+                                <p id="totalRacketReductionPowerupsActivated"></p>
+                            </div>
+                        </div>
+                        <div class="advanced-sub-stats">
+                            <div class="advanced-sub-stats-left">
+                                <p>Total Racket-Increase Powerups Activated</p>
+                            </div>
+                            <div class="advanced-sub-stats-right">
+                                <p id="totalRacketIncreasePowerupsActivated"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="chartPointTimeStats" class="advanced-stats-right-bot">
+                        <canvas id="chartPointTime"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

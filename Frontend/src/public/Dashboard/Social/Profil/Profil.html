@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.hidden {
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	<div id="body2_sprofil">
+		<section id="presentation">
+			<img src="./noUser.png" alt="user Image" id="userImg"></img>
+			<div id="userPres">
+				<div id="userPresAlign">
+					<div id="userId">Loading . . .</div>
+					<div id="userPseudo">Loading . . .</div>
+					<div id="userStatus"><div id="userStatusValue">Loading . . .</div><div id="statusPastille" class="online"></div></div>
+				</div>
+			</div>
+		</section>
+		<section id="about">
+			<div id="desc"><div class="titleValue">Desc :</div><div id="descValue" class="value">Loading . . .</div></div>
+		</section>
+		<div class="separator"></div>
+		<section id="interaction" class="interaction">
+			<div id="BlockedBy" class="hidden">You have been blocked by this user</div>
+			<button class="profilButton" id="Afriend">Add Friend</button>
+			<button class="profilButton hidden" id="Rfriend">Remove Friend</button>
+			<button class="profilButton hidden" id="Sentfriend">Cancel Friend Request</button>
+			<button class="profilButton hidden" id="Acceptfriend">Accept Friend Request</button>
+			<button class="profilButton" id="BattleB">Battle</button>
+			<button class="profilButton" id="BlockB">Block</button>
+			<button class="profilButton hidden" id="UnblockB">Unblock</button>
+		</section>
+		<div id="selectBattleMode" class="interaction hidden">
+			<button class="profilButton" id="BattleBClassic">Classic</button>
+			<button class="profilButton" id="BattleBBack">Back</button>
+			<button class="profilButton" id="BattleBPower">PowerUps</button>
+		</div>
+		<div class="separator"></div>
+		<div id="Level">
+			<div id="lvltext"><div>Loading . . .</div></div>
+			<div id="lvl"></div>
+		</div>
+		<section id="Stats">
+			<div class="statspanel">
+				<div class="stat">
+					<div class="statTitle"><div class="statName"><div class="statIcon"><span class="material-symbols-outlined">joystick</span></div><div class="statTitletext">Game played</div></div><div class="statDot">:</div></div>
+					<div class="statValue" id="gpValue">Loading . . .</div>
+				</div>
+				<div class="stat">
+					<div class="statTitle"><div class="statName"><div class="statIcon"><span class="material-symbols-outlined">emoji_events</span></div><div class="statTitletext">Victory</div></div><div class="statDot">:</div></div>
+					<div class="statValue" id="vicvalue">Loading . . .</div>
+				</div>
+			</div>
+			<div class="statspanel">
+				<div class="stat">
+					<div class="statTitle"><div class="statName"><div class="statIcon"><span class="material-symbols-outlined">Flag</span></div><div class="statTitletext">G/M</div></div><div class="statDot">:</div></div>
+					<div class="statValue" id="ratioValue">Loading . . .</div>
+				</div>
+				<div class="stat">
+					<div class="statTitle"><div class="statName"><div class="statIcon"><span class="material-symbols-outlined">Star</span></div><div class="statTitletext">MMR 1v1</div></div><div class="statDot">:</div></div>
+					<div class="statValue" id="mmrValue">Loading . . .</div>
+				</div>
+			</div>
+		</section>
+		<section id="history">
+			<div id="historyHeader">Last games played :</div>
+			<div id="historyLoadMore">Load More</div>
+		</section>
+		<div id="sizePlus"></div>
+	</div>
+</html>

@@ -1,0 +1,182 @@
+#body-register {
+	width: 100%;
+	height: 100%;
+}
+
+.box-register {
+	max-width: 600px;
+	width: 50%;
+	min-width: 400px;
+	height: 750px;
+	margin: auto;
+	box-shadow: 0 0 15px 1px rgb(196, 196, 196);
+	background-color: rgb(252, 254, 255);
+	border-radius: 10px;
+	margin-top: 2px;
+
+	display: flex;
+	flex-direction: column;
+
+	padding-bottom: 10px;
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+.title-register {
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 5px;
+	width: 75%;
+	height: fit-content;
+	text-align: left;
+	font-size: 30px;
+	font-family: 'Kanit', sans-serif;
+      font-weight: 700;
+	user-select: none;
+}
+
+@media (max-width: 900px) {
+	.title-register {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.PreCat-register {
+	height: 30px;
+	width: 75%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0px auto;
+	font-size: 20px;
+	font-family: 'Kanit', sans-serif;
+      font-weight: 500;
+}
+
+.Cat-register {
+	height: 50px;
+	width: 75%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.textInput-register {
+	width: 100%;
+	height: 100%;
+	border: 1px solid black;
+	border-radius: 5px;
+	font-size: 25px;
+	font-family: 'Kanit', sans-serif;
+      font-weight: 400;
+	outline: none;
+	transition: 0.1s;
+}
+
+#box-register input:focus {
+	border: 1px solid rgb(0, 140, 255);
+	box-shadow: 0 0 6px rgb(0, 140, 255);
+}
+
+#box-register a {
+	text-decoration: none;
+	user-select: none;
+}
+
+.blutxt-register {
+	color: rgb(0, 140, 255);
+}
+
+.blutxt-register:hover {
+	color: rgb(97, 97, 97);
+}
+
+.blutxt-register:visited {
+	color: rgb(0, 140, 255);
+}
+
+.submit-register {
+	width: 100%;
+	border: 0;
+	background-color: rgb(0, 140, 255);
+	border-radius: 5px;
+	font-size: 20px;
+	font-family: 'Kanit', sans-serif;
+      font-weight: 400;
+	color: white;
+	cursor: pointer;
+	user-select: none;
+}
+
+#box-register button {
+	user-select: none;
+}
+
+.unusable-register {
+	background-color: grey;
+	opacity: 0.5;
+	pointer-events: none;
+	cursor: not-allowed;
+}
+
+#CatSignIn_register {
+	height: 30px;
+	width: 75%;
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.SignIn_register {
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+	font-family: 'Kanit', sans-serif;
+	font-weight: 300;
+}
+
+.infobox-register {
+	height: 20px;
+	width: 75%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0px auto;
+	margin-top: 1px;
+	margin-bottom: 5px;
+
+	/* background-color: green; */
+}
+
+.info-register {
+	font-size: 15px;
+	font-family: 'Kanit', sans-serif;
+	font-weight: 300;
+	text-align: left;
+	color: red;
+}
+
+.inputError-register {
+	border: 1px solid red;
+}
+.inputError-register:focus {
+	border: 1px solid red;
+	box-shadow: 0 0 6px red;
+}
+
+.inputWarning-register {
+	border: 1px solid orange;
+}
+.inputWarning-register:focus {
+	border: 1px solid orange;
+	box-shadow: 0 0 6px orange;
+}
+
+.hidden {
+	display: none;
+}

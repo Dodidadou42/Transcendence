@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+#body {
+    height: calc(100vh - 90px);
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#rightNavBarOut {
+    height: 100%;
+    width: 300px;
+    background: url('./p4.gif');
+}
+
+#content {
+    height: 100%;
+    width: calc(100vw - 300px);
+    /* background-color: rgba(0, 128, 0, 0.733); */
+}
+
+@media screen and (max-width: 1200px) {
+    #rightNavBarOut {
+        min-width: 250px;
+        width: 25%;
+        max-width: 300px;
+    }
+
+    #content {
+        min-width: calc(100vw - 300px);
+        width: calc(100vw - 25%);
+        max-width: calc(100vw - 250px);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #rightNavBarOut {
+        min-width: 150px;
+        width: 25%;
+        max-width: 250px;
+    }
+
+    #content {
+        min-width: calc(100vw - 250px);
+        width: calc(100vw - 25%);
+        max-width: calc(100vw - 150px);
+    }
+}
+
+#rightNavBar {
+    width: calc(100% - 3px);
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    flex-direction: column;
+}
+
+#navHead {
+    height: 160px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navHeadCat {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+    user-select: none;
+    cursor: pointer;
+}
+
+.navHeadCat:hover {
+    background-color: rgba(219, 219, 219, 0.432);
+}
+
+.navHeadCatTitle {
+    margin: auto 0;
+    margin-left: 20px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 25px;
+	font-weight: 600;
+	font-family: 'Kanit', sans-serif;
+}
+
+.navHeadCatIcon {
+    margin: auto 0;
+    margin-left: 30px;
+    transform: scale(1.75);
+    height: fit-content;
+    width: fit-content;
+}
+
+#navBodyContact {
+    height: calc(100% - 160px - 10px - 1px);
+    width: 100%;
+    overflow-y: scroll;
+}
+
+#navBodyGroup {
+    height: calc(100% - 160px - 50px - 1px);
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.navFoot {
+    height: 10px;
+    width: 100%;
+    border-top: 1px solid rgba(160, 160, 160, 0.411);
+    background: url('./p4.gif');
+}
+
+.navFootGroup {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navFootAddGroup {
+    width: fit-content;
+    height: fit-content;
+    padding: 4px 10px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 5px 1px rgba(129, 129, 129, 0.349);
+    font-size: 16px;
+    font-weight: 400;
+	font-family: 'Kanit', sans-serif;
+    border-radius: 3px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.navFootAddGroup:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 800px) {
+
+    .navHeadCatTitle {
+        display: none;
+    }
+
+    .navHeadCatIcon {
+        margin: auto;
+    }
+
+}
+
+#noconv {
+    height: fit-content;
+    width: fit-content;
+    font-size: 15px;
+	font-weight: 400;
+	font-family: 'Kanit', sans-serif;
+    margin: 0 auto;
+}
+
+#noconvgroup {
+    height: fit-content;
+    width: fit-content;
+    font-size: 15px;
+	font-weight: 400;
+	font-family: 'Kanit', sans-serif;
+    margin: 0 auto;
+}
+
+#navContact {
+    width: 100%;
+    height: fit-content;
+}
+
+#navGroup {
+    width: 100%;
+    height: fit-content;
+}
+
+.NCp {
+    height: 60px;
+    width: calc(100% - 10px);
+    margin: 0 auto;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.NPCu_id {
+    height: fit-content;
+    width: fit-content;
+    max-width: 120px;
+    font-size: 12px;
+    font-weight: 400;
+	font-family: 'Kanit', sans-serif;
+    margin-left: 5px;
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+
+@media screen and (min-width: 1200px) {
+    .NPCu_id {
+        max-width: 165px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .NPCu_id {
+        /* max-width: 80px;
+        font-size: 15px; */
+        display: none;
+    }
+}
+
+.more {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 90px;
+    width: 150px;
+    background-color: white;
+    z-index: 4;
+    border-radius: 8px;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+
+    div {
+        width: 100%;
+        height: calc(100% / 3);
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: 'Kanit', sans-serif;
+        cursor: pointer;
+        user-select: none;
+
+        div {
+            height: fit-content;
+            width: fit-content;
+            margin: auto auto;
+            margin-top: 5px;
+        }
+    }
+
+    div:hover {
+        background-color: rgb(241, 241, 241);
+    }
+}
+
+#noreCancel {
+    color: red;
+}
+
+.NGp {
+    height: 60px;
+    width: calc(100% - 10px);
+    margin: 0 auto;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.NGPInfo, .NPCInfo {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+}
+
+.NGPimg, .NCPimg{
+    height: 55px;
+    width: 55px;
+    border-radius: 4px;
+    pointer-events: none;
+    border-radius: 15px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.NGPu_id {
+    height: fit-content;
+    width: fit-content;
+    max-width: 120px;
+    font-size: 12px;
+    font-weight: 400;
+	font-family: 'Kanit', sans-serif;
+    margin-left: 5px;
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+
+.NGPmore, .NPCmore {
+    height: fit-content;
+    width: fit-content;
+    margin: auto 0;
+    transform: scale(1.4);
+    user-select: none;
+    border-radius: 50%;
+    padding: 0 3px;
+    padding-top: 3px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.NGPmore:hover, .NPCmore:hover {
+    background-color: rgb(247, 247, 247);
+}
+
+@media screen and (min-width: 1200px) {
+    .NGPu_id {
+        max-width: 165px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .NGPu_id {
+        /* max-width: 80px;
+        font-size: 15px; */
+        display: none;
+    }
+}
+
+.createGroupBody {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(68, 68, 68, 0.548);
+    pointer-events: auto;
+    z-index: 5;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.createGroupForm {
+    height: 700px;
+    width: 500px;
+    border-radius: 15px;
+    background-color: white;
+    animation: fadeIn 0.25s linear forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        position: relative;
+        top: -10px;
+        opacity: 0.5;
+    }
+    100% {
+        position: relative;
+        top: 0;
+        opacity: 1;
+    }
+}
+
+#createGroupFormTitle {
+    height: 49px;
+    width: 100%;
+    border-bottom: 1px solid rgba(66, 66, 66, 0.253);
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+#createGroupFormBody {
+    height: 575px;
+    width: 100%;
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+
+}
+
+.cgfDiv {
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 15px;
+    height: 25px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cgfLabel {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cgfInput {
+    height: 20px;
+    width: 300px;
+}
+
+#cgfMembers {
+    width: 95%;
+    height: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    padding: 2px 0;
+
+    position: relative;
+    right: -8px;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(255, 255, 255);
+}
+
+.cgfPerson {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.cgfPerson:hover {
+    background-color: whitesmoke;
+}
+
+.cgfPersonImg {
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    object-position: center;
+    margin: auto 0;
+}
+
+.cgfPersonName {
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: auto 0;
+    margin-left: 15px;
+    height: fit-content;
+    width: 300px;
+}
+
+.cgfPersonRemove {
+    font-family: "Kanit", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    height: fit-content;
+    width: fit-content;
+    margin: auto 0;
+    margin-left: 50px;
+}
+
+#createGroupFormFoot {
+    height: 74px;
+    border-top: 1px solid rgba(66, 66, 66, 0.253);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+#CGFcancel, .CGFcreate{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 auto;
+    user-select: none;
+    cursor: pointer;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 2px 20px;
+    border: 1px solid rgba(71, 71, 71, 0.541);
+    transition: 0.25s;
+}
+
+#CGFcancel:hover, .CGFcreate:hover {
+    transform: scale(1.1);
+}
+
+#CGFcancel {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 2px 10px;
+}
+
+.createGroupBodyLoader {
+    margin: 0 auto;
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.createGroupInviteForm {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    background-color: rgba(0, 0, 0, 0.377);
+    z-index: 6;
+
+    pointer-events: auto;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.CGFInviteForm {
+    height: 720px;
+    width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    animation: fadeIn 0.25s linear forwards;
+    display: flex;
+    flex-direction: column;
+}
+
+.CGFInviteFormHead {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    width: 100%;
+
+    span {
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        height: fit-content;
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    input {
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        height: 20px;
+        width: calc(100% - 60px);
+        margin: 0 auto;
+    }
+}
+
+.CGFInviteFormBody {
+    display: flex;
+    flex-direction: column;
+    height: 680px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.CGFInviteFormFoot {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 100%;
+
+    button {
+        width: fit-content;
+        height: fit-content;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+}
+
+.personToGroupInvite {
+    height: 40px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+
+    img {
+        height: 35px;
+        width: 35px;
+        object-fit: cover;
+        object-position: center;
+        margin: auto 0;
+        margin-left: 15px;
+    }
+
+    span {
+        width: 260px;
+        height: fit-content;
+        margin: auto 0;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        margin-left: 5px;
+    }
+
+    button {
+        height: fit-content;
+        width: fit-content;
+        margin: auto 0;
+        margin-left: 15px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+    }
+}
+
+.personToGroupInvite:hover {
+    background-color: whitesmoke;
+}
+
+.insearchpeopleload {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    transform: scale(0.5);
+
+      .lds-ring div {
+        border: 8px solid rgb(0, 0, 0);
+        border-color: rgb(0, 0, 0) transparent transparent transparent;
+      }
+
+}
+
+.createDisable {
+    background-color: rgb(172, 172, 172);
+    pointer-events: none;
+}
+
+.hidden {
+    display: none;
+}

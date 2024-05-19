@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		.hidden {
+			visibility: hidden;
+		}
+	</style>
+	<div id="tournamentBody" class="tournamentBody">
+		<div class="tp1">
+			<div id="match1" class="match">
+				<div class="matchProfile">
+					<img id="m1p1Picture" src="./noUser.png" class="matchProfilePicture">
+					<div id="m1p1Name" class="matchProfileName">waiting for player . . .</div>
+					<div class="matchProfileIconImg"><img id="m1p1Icon" class="matchProfileIconImg_ hidden" src="./crown.gif"></div>
+				</div>
+				<div class="matchProfile">
+					<img id="m1p2Picture" src="./noUser.png" class="matchProfilePicture">
+					<div id="m1p2Name" class="matchProfileName">waiting for player . . .</div>
+					<div class="matchProfileIconImg"><img id="m1p2Icon" class="matchProfileIconImg_ hidden" src="./tombstone.gif"></div>
+				</div>
+				<div class="matchTitle title">Match 1</div>
+			</div>
+			<div class="tournamentTreeLineX"></div>
+			<div id="match2" class="match">
+				<div class="matchProfile">
+					<img id="m2p1Picture" src="./noUser.png" class="matchProfilePicture">
+					<div id="m2p1Name" class="matchProfileName">waiting for player . . .</div>
+					<div class="matchProfileIconImg"><img id="m2p1Icon" class="matchProfileIconImg_ hidden" src="./tombstone.gif"></div>
+				</div>
+				<div class="matchProfile">
+					<img id="m2p2Picture" src="./noUser.png" class="matchProfilePicture">
+					<div id="m2p2Name" class="matchProfileName">waiting for player . . .</div>
+					<div class="matchProfileIconImg"><img id="m2p2Icon" class="matchProfileIconImg_ hidden" src="./crown.gif"></div>
+				</div>
+				<div class="matchTitle title">Match 2</div>
+			</div>
+		</div>
+		<div class="tp2">
+			<div id="match3" class="match">
+				<div class="matchProfile">
+					<img id="m3p1Picture" src="./noUser.png" class="matchProfilePicture">
+					<div id="m3p1Name" class="matchProfileName">waiting for result . . .</div>
+					<div class="matchProfileIconImg"><img id="m3p1Icon" class="matchProfileIconImg_ hidden" src="./tombstone.gif"></div>
+				</div>
+				<div class="matchProfile">
+					<img id="m3p2Picture" src="./noUser.png" class="matchProfilePicture">
+					<div id="m3p2Name" class="matchProfileName">waiting for result . . .</div>
+					<div class="matchProfileIconImg"><img id="m3p2Icon" class="matchProfileIconImg_ hidden" src="./tombstone.gif"></div>
+				</div>
+				<div class="matchTitle title">Match Winners</div>
+			</div>
+			<div class="tournamentTreeLineY"></div>
+			<div id="match4" class="match">
+				<div class="matchProfile">
+					<img id="m4p1Picture" src="./noUser.png" class="matchProfilePicture">
+					<div id="m4p1Name" class="matchProfileName">waiting for result . . .</div>
+					<div class="matchProfileIconImg"><img id="m4p1Icon" class="matchProfileIconImg_ hidden" src="./tombstone.gif"></div>
+				</div>
+				<div class="matchProfile">
+					<img id="m4p2Picture" src="./noUser.png" class="matchProfilePicture">
+					<div id="m4p2Name" class="matchProfileName">waiting for result . . .</div>
+					<div class="matchProfileIconImg"><img id="m4p2Icon" class="matchProfileIconImg_ hidden" src="./tombstone.gif"></div>
+				</div>
+				<div class="matchTitleD title">Match Losers</div>
+			</div>
+		</div>
+		<div id="MatchPanel" class="MatchPanel">
+			<div class="MatchPaneInfo">
+				<div class="MatchPanelInfoPlayers">
+					<div class="MatchPanelInfoPlayersTitle title">Players :</div>
+					<div class="matchProfile">
+						<img id="P1Pic" src="./noUser.png" class="matchProfilePicture">
+						<div class="matchProfileNameBox">
+							<div id="P1Name" class="matchProfileName">waiting for player . . .</div>
+							<div id="P1Nameid" class="matchProfileNameId">waiting for player . . .</div>
+						</div>
+						<span id="P1Icon" class="material-symbols-outlined matchProfileIcon hidden">done</span>
+					</div>
+					<div class="matchProfile">
+						<img id="P2Pic" src="./noUser.png" class="matchProfilePicture">
+						<div class="matchProfileNameBox">
+							<div id="P2Name" class="matchProfileName">waiting for player . . .</div>
+							<div id="P2Nameid" class="matchProfileNameId">waiting for player . . .</div>
+						</div>
+						<span id="P2Icon" class="material-symbols-outlined matchProfileIcon hidden">done</span>
+					</div>
+					<div class="matchProfile">
+						<img id="P3Pic" src="./noUser.png" class="matchProfilePicture">
+						<div class="matchProfileNameBox">
+							<div id="P3Name" class="matchProfileName">waiting for player . . .</div>
+							<div id="P3Nameid" class="matchProfileNameId">waiting for player . . .</div>
+						</div>
+						<span id="P3Icon" class="material-symbols-outlined matchProfileIcon hidden">done</span>
+					</div>
+					<div class="matchProfile">
+						<img id="P4Pic" src="./noUser.png" class="matchProfilePicture">
+						<div class="matchProfileNameBox">
+							<div id="P4Name" class="matchProfileName">waiting for player . . .</div>
+							<div id="P4Nameid" class="matchProfileNameId">waiting for player . . .</div>
+						</div>
+						<span id="P4Icon" class="material-symbols-outlined matchProfileIcon hidden">done</span>
+					</div>
+				</div>
+				<div class="MatchPanelInfoStatus">
+					<div class="MatchPanelInfoStatusTitle title">Settings :</div>
+					<div class="ChangeTournamentPseudoPanel hidden" id="ChangeTournamentPseudoPanel">
+						<div class="ChangeTournamentPseudoPanelTitle">Change your pseudo for the tournament here : (max 15 char)</div>
+						<div class="ChangeTournamentPseudoBox">
+							<input type="text" maxlength="15" pattern="[a-zA-Z0-9]*" title="only letters and numbers are allowed" placeholder="loading . . ." id="editTournamentPseudoInput">
+							<button id="editTournamentPseudo" title="send the new pseudo">Edit</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="MatchPanelButtons">
+				<div class="MatchPanelButtonsStatus" id="tournamentStatus">game waiting for players . . .</div>
+				<div id="tournamentReadyButton" class="tournamentReadyButtonOn hidden">Ready</div>
+				<div id="tournamentReadyButton2" class="tournamentReadyButtonOn hidden">Ready</div>
+				<div id="MatchPanelButtonsLoad" class="MatchPanelButtonsLoad"><span class="loader"></span></div>
+				<div id="tournamentLeaveButton" class="tournamentLeaveButton">Leave</div>
+				<div id="tournamentLeaveAtEndButton" class="tournamentLeaveButton hidden">Leave the tournament</div>
+			</div>
+		</div>
+		<div id="confirmLeavePanel" class="confirmLeaveOut hidden">
+			<div class="confirmLeavePanel">
+				<div class="confirmLeavePanelTitle">Confirm to leave the tournament</div>
+				<div class="confirmLeavePanelButtons">
+					<div id="confirmLeaveTournamentButton" class="confirmLeaveTournamentButton">Leave</div>
+					<div id="confirmLeaveTournamentButtonBack" class="confirmLeaveTournamentButton">cancel</div>
+				</div>
+			</div>
+		</div>
+    </div>
+	<div id="count" class="countBox">
+		<div class="countPanel">
+			<div class="countValue">3</div>
+			<div class="countValue">2</div>
+			<div class="countValue">1</div>
+			<div class="countValue">Fight</div>
+		</div>
+	</div>
+</html>

@@ -1,0 +1,25 @@
+services:
+  nginx:
+    depends_on:
+      - frontend
+      - backend
+    container_name: nginx-dev
+    image: nginx-dev:${VERSION_NGINX}
+
+  frontend:
+    container_name: front-dev
+    build:
+      target: development
+    image: front-dev:${VERSION_FRONT}
+    volumes:
+      - ./Frontend/:/app/
+
+  backend:
+    container_name: back-dev
+    build:
+      target: development
+      args:
+        - DEV=true
+    image: back-dev:${VERSION_PYTHON}
+    volumes:
+      - ./Backend/:/app/

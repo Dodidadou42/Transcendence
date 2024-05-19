@@ -1,0 +1,37 @@
+#body_cookies {
+    margin: 20px;
+}
+
+#body_cookies header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+#body_cookies section {
+    margin-bottom: 20px;
+}
+
+#body_cookies h1, #body_cookies h2 {
+    color: #333;
+}
+
+#body_cookies ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#body_cookies a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+#body_cookies a:hover {
+    text-decoration: underline;
+}
+
+#body_cookies footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #777;
+}

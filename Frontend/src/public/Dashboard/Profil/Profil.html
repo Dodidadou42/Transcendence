@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.hidden {
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	<div id="body_profil" class="">
+		<section id="profilHead_dprofil">
+			<div style="width: 100%; height: 1px; margin: 0;"></div>
+			<div id="box1_dprofil">
+				<div id="imgOut_dprofil"><div id="imgIn_dprofil"><img id="userImg_dprofil" src=""></div></div>
+				<div id="InfoBox1_dprofil">
+					<div class="infoBox1Info_dprofil">
+						<div id="UidModif_dprofil">
+							<div id="Uid_dprofil">Loading . . .</div>
+							<div id="modif_dprofil">Edit profile</div>
+						</div>
+						<div id="pseudo_dprofil">Loading . . .</div>
+						<div id="desc_dprofil">Loading . . .</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="Level_dprofil">
+			<div id="lvltext_dprofil"><div>Loading . . .</div></div>
+			<div id="lvl_dprofil"></div>
+		</div>
+		<section id="Stats_dprofil">
+			<div class="statspanel_dprofil">
+				<div class="stat_dprofil">
+					<div class="statTitle_dprofil"><div class="statName_dprofil"><div class="statIcon_dprofil"><span class="material-symbols-outlined">joystick</span></div><div class="statTitletext_dprofil">Game played</div></div><div class="statDot_dprofil">:</div></div>
+					<div class="statValue_dprofil" id="gpValue_dprofil">Loading . . .</div>
+				</div>
+				<div class="stat_dprofil">
+					<div class="statTitle_dprofil"><div class="statName_dprofil"><div class="statIcon_dprofil"><span class="material-symbols-outlined">emoji_events</span></div><div class="statTitletext_dprofil">Victory</div></div><div class="statDot_dprofil">:</div></div>
+					<div class="statValue_dprofil" id="vicvalue_dprofil">Loading . . .</div>
+				</div>
+			</div>
+			<div class="statspanel_dprofil">
+				<div class="stat_dprofil">
+					<div class="statTitle_dprofil"><div class="statName_dprofil"><div class="statIcon_dprofil"><span class="material-symbols-outlined">Flag</span></div><div class="statTitletext_dprofil">G/M</div></div><div class="statDot_dprofil">:</div></div>
+					<div class="statValue_dprofil" id="ratioValue_dprofil">Loading . . .</div>
+				</div>
+				<div class="stat_dprofil">
+					<div class="statTitle_dprofil"><div class="statName_dprofil"><div class="statIcon_dprofil"><span class="material-symbols-outlined">Star</span></div><div class="statTitletext_dprofil">MMR</div></div><div class="statDot_dprofil">:</div></div>
+					<div class="statValue_dprofil" id="mmrValue_dprofil">Loading . . .</div>
+				</div>
+			</div>
+		</section>
+		<section id="history">
+			<div id="historyHeader">Last games played :</div>
+			<div id="historyLoadMore">Load More</div>
+		</section>
+	</div>
+	<section id="EditBody_dprofil" class="hidden">
+
+		<div id="editTitle_dprofil">
+			<span>Edit profile</span>
+			<button id="editDeleteAccountButton_dprofil" title="Delete your account" class="editDeleteAccountButton_dprofil">
+				<span class="material-symbols-outlined">delete</span>
+			</button>
+		</div>
+
+		<div id="editImgOut_dprofil">
+			<img id="editImg_dprofil" class="" src="" title="la PP">
+			<div id="imgLoading_dprofil" class="hidden"></div>
+			<div id="editImgButton_dprofil">
+				<input type="file" id="editImgButtonC_dprofil" accept="image/*" value="Edit photo" placeholder="Edit photo">
+				<div id="editImgButtonCache_dprofil">Edit photo</div>
+			</div>
+		</div>
+
+		<div id="editPseudoOut_dprofil" title="Votre pseudo: les charactere ['@,#,`,$,%,^,&,^,&,*,(,),*,+'] et les espaces ne sont pas autorises">
+			<input type="text" id="editPseudoInput_dprofil" maxlength="15">
+			<div id="editPseudoInputCount_dprofil">0/15</div>
+		</div>
+
+		<div id="editDescOut_dprofil" title="Description de votre compte">
+			<textarea id="editDesc_dprofil" maxlength="200"></textarea>
+			<div id="editDescInputCount_dprofil">0/200</div>
+		</div>
+
+		<div id="activateChangePassword_dprofil" title="Click to change password" class="activateChangePassword_dprofil">
+			<div>Edit Password</div>
+		</div>
+
+		<div id="editPasswordOut_dprofil" class="editPasswordOut_dprofil hidden">
+			<div id="editPasswordTitle_dprofil">Change your password</div>
+			<div id="editPasswordCurrent_dprofil" class="editPasswordInput_dprofil" title="current password">
+				<input type="password" maxlength="25" placeholder="current password" id="currentPass_dprofil">
+			</div>
+			<div id="editPasswordNew_dprofil" class="editPasswordInput_dprofil" title="new password">
+				<input type="password" maxlength="25" placeholder="new password" id="newPass_dprofil">
+			</div>
+			<div id="editPasswordNewRepeat_dprofil" class="editPasswordInput_dprofil" title="confirm new password">
+				<input type="password" maxlength="25" placeholder="confirm new password" id="confirmPass_dprofil">
+			</div>
+
+			<div id="editPasswordSend_dprofil" title="click to send the password">
+				<div>Send modifications</div>
+			</div>
+
+			<div id="editPasswordPanelCross_dprofil"><div class="material-symbols-outlined">close</div></div>
+		</div>
+
+		<div id="activateA2F_dprofil">
+			<button id="activateA2FButton_dprofil">Activate 2FA with Authenticator</button>
+		</div>
+
+		<div id="desactivateA2F_dprofil">
+			<button id="desactivateA2FButton_dprofil">Desactivate 2FA</button>
+		</div>
+
+		<div class="hidden" id="activationA2F_dprofil">
+			<div id="title_dprofil">Activate Multi-factor authentication</div>
+			<div id="subtitle_dprofil">Secure your account in 3 simple steps:</div>
+
+			<div id="divider_dprofil"></div>
+
+			<div id="step1_dprofil">
+				<div id="step1-img_dprofil">
+					<img src="./auth.png" alt="Logo of Google Authenticator">
+				</div>
+				<div id="step1-content_dprofil">
+					<div class="step-title_dprofil">Download an Authentication Application</div>
+					<div class="step-content_dprofil">Download and install <a href="https://play.google.com/store/apps/details?id=com.authy.authy" target="_blank">Authy</a> or <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=fr&gl=US" target="_blank">Google Authenticator</a> on your phone or tablet.</div>
+				</div>
+			</div>
+
+			<div id="divider_dprofil"></div>
+
+			<div id="step1_dprofil">
+				<div id="step1-img_dprofil">
+					<img id="qr-code_dprofil" alt="QR Code">
+				</div>
+				<div id="step1-content_dprofil">
+					<div class="step-title_dprofil">Scan the QR Code</div>
+					<div class="step-content_dprofil">Open the authentication application and scan the image on the left with your phone's camera.</div>
+					<div class="step-title_dprofil marge-top_dprofil">2FA key (Manual entry)</div>
+					<div id="step-key_dprofil"></div>
+				</div>
+			</div>
+
+			<div id="divider_dprofil"></div>
+
+			<div id="step1_dprofil">
+				<div id="step1-img_dprofil">
+					<img src="./auth_phone.png" alt="Exemple for 6-digit authentication">
+				</div>
+				<div id="step1-content_dprofil">
+					<div class="step-title_dprofil">Link with a code</div>
+					<div class="step-content_dprofil">Enters the 6-digit authentication code generated by your authentication application.</div>
+					<div id="activation-container_dprofil">
+						<input type="text" id="activation-code_dprofil" placeholder="123456" pattern="\d*" maxlength="6">
+						<button id="activate-button_dprofil" class="activate-button-not-ok_dprofil">Activate</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden" id="desactivationA2F_dprofil">
+			<div id="title_dprofil">Desactivate Multi-factor authentication</div>
+			<div id="subtitle_red_dprofil">Be careful! Your account will be less secure!</div>
+
+			<div id="divider_dprofil"></div>
+
+			<div id="step1_dprofil">
+				<div id="step1-img_dprofil">
+					<img src="./auth_phone.png" alt="Exemple for 6-digit authentication">
+				</div>
+				<div id="step1-content_dprofil">
+					<div class="step-title_dprofil">Desactivate with a code</div>
+					<div class="step-content_dprofil">Enters the 6-digit authentication code generated by your authentication application.</div>
+					<div id="desactivation-container_dprofil">
+						<input type="text" id="desactivation-code_dprofil" placeholder="123456" pattern="\d*" maxlength="6">
+						<button id="desactivate-button_dprofil" class="desactivate-button-not-ok_dprofil">Desactivate</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+
+		<div id="editSubmit_dprofil" class="editSubmit_dprofil editSubmitUnactive_dprofil">Submit</div>
+		<div id="editBack_dprofil" class="">Back</div>
+	</section> <!-- end of Edit -->
+	<section id="updateNotif_dprofil">
+		<div id="updateNotifBox_dprofil">
+			<div id="updateNotifTitle_dprofil">Profil has been updated</div>
+		</div>
+	</section>
+	<section id="deleteAccountPanel_dprofil" class="deleteAccountBox_dprofil hidden">
+		<div class="deleteAccountPanel_dprofil">
+			<span class="confirmDeleteTitle_dprofil">Confirm to delete your account</span>
+			<div class="confirmDeleteButtons_dprofil">
+				<button id="confirmDeleteAccount_dprofil" class="deleteAccountPanelButton_dprofil">Confirm</button>
+				<button id="cancelDeleteAccount_dprofil" class="deleteAccountPanelButton_dprofil">Cancel</button>
+			</div>
+		</div>
+	</section>
+</html>

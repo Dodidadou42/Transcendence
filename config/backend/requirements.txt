@@ -1,0 +1,11 @@
+Django>=3.2.4,<3.3
+psycopg2>=2.8.6,<2.9
+django-environ
+Pillow
+PyJWT
+httpx
+channels==3.0.5
+gunicorn
+django-otp
+qrcode[pil]
+pyotp

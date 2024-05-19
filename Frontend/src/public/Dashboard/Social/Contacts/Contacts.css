@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+#body2_scontacts {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+
+}
+
+#filterOut {
+	height: fit-content;
+	width: 100%;
+	margin: 0 auto;
+
+	background-color: white;
+	box-shadow: 0px 5px 5px 0px #acacac;
+}
+
+#filter {
+	height: 50px;
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.filt {
+	font-size: 20px;
+	font-weight: 700;
+	font-family: 'Noto', sans-serif;
+	width: fit-content;
+	height: fit-content;
+	margin: auto 0;
+
+	border-radius: 5px;
+	padding: 5px;
+	user-select: none;
+	cursor: pointer;
+}
+
+.filt:hover {
+	background-color: rgba(202, 202, 202, 0.24);
+}
+
+.filterSelected {
+	background-color: rgba(202, 202, 202, 0.623);
+	cursor: default;
+}
+
+.filterSelected:hover {
+	background-color: rgba(202, 202, 202, 0.623);
+}
+
+@media screen and (max-width: 800px) {
+	.filt {
+		font-size: 15px;
+	}
+}
+
+#search {
+	width: 100%;
+	max-width: 1500px;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+#searchBarOut {
+	height: 50px;
+	width: calc(100% - 4px);
+	max-width: 600px;
+	margin: 0 auto;
+	border-radius: 7px;
+	display: flex;
+	flex-direction: row;
+}
+
+.searchBarOut {
+	background-color: rgba(187, 187, 187, 0.459);
+}
+
+#searchIcon {
+	height: fit-content;
+	width: fit-content;
+}
+
+#searchIconOut {
+	height: fit-content;
+	width: fit-content;
+	margin: auto 15px;
+	transform: scale(1.4);
+}
+
+#searchBar {
+	border: 0;
+	background-color: rgba(187, 187, 187, 0);
+	width: calc(100% - 50px);
+	font-size: 20px;
+	font-weight: 700;
+	font-family: 'Noto', sans-serif;
+}
+
+#searchBar:focus {
+	border: 0;
+	outline: none;
+}
+
+.searchFocus {
+	outline: 3px solid rgb(255, 174, 0);
+	background-color: rgba(209, 209, 209, 0.459);
+}
+
+#resultOut {
+	min-height: 350px;
+	height: calc(100vh - 250px);
+	width: calc(100% - 100px);
+	max-width: 1200px;
+	background-color: rgb(255, 255, 255);
+	margin: 0 auto;
+	margin-top: 20px;
+	overflow-y: scroll;
+}
+
+@media screen and (max-width: 800px) {
+	#resultOut {
+		width: calc(100% - 4px);
+	}
+}
+
+.messageLoad {
+	width: 100%;
+	height: 100px;
+	margin: 0 auto;
+	background-color: rgb(197, 197, 197);
+	margin-bottom: 10px;
+
+	animation: messageLoading 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes messageLoading {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.messageLoad:nth-child(1) {
+	animation-delay: 0s;
+}
+
+.messageLoad:nth-child(2) {
+animation-delay: 0.1s;
+}
+
+.messageLoad:nth-child(3) {
+animation-delay: 0.2s;
+}
+
+.messageLoad:nth-child(4) {
+animation-delay: 0.3s;
+}
+
+.messageLoad:nth-child(5) {
+animation-delay: 0.4s;
+}
+
+.messageLoad:nth-child(6) {
+animation-delay: 0.5s;
+}
+
+.messageLoad:nth-child(7) {
+animation-delay: 0.6s;
+}
+
+.messageLoad:nth-child(8) {
+animation-delay: 0.7s;
+}
+
+.profil {
+	width: 100%;
+	height: 100px;
+	margin: 0 auto;
+	/* background-color: rgb(245, 245, 245); */
+	background: url(./b3Blend.png);
+	background-size: cover;
+	margin-bottom: 10px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.profilInfos {
+	height: 100%;
+	width: fit-content;
+	margin-left: 10px;
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+}
+
+.profilInfosText {
+	height: 60px;
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin: auto 0;
+	font-size: 15px;
+	font-weight: 600;
+	font-family: 'Noto', sans-serif;
+}
+
+.profilInfosPseudo {
+	font-size: 20px;
+	max-width: 190px;
+	width: fit-content;
+	height: fit-content;
+	word-wrap: break-word;
+}
+
+.profilInfosStatus {
+	max-width: 250px;
+	font-size: 15px;
+	max-width: 190px;
+	width: fit-content;
+	height: fit-content;
+	word-wrap: break-word;
+}
+
+.profilImg {
+	height: 90px;
+	width: 90px;
+	margin: auto 0;
+	border-radius: 10px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.profilInteraction {
+	display: flex;
+	flex-direction: row;
+	height: fit-content;
+	width: fit-content;
+	margin: auto 0;
+	gap: 15px;
+}
+
+.ProfilButton {
+	height: 60px;
+	width: 130px;
+	margin: auto 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	font-size: 25px;
+	font-weight: 600;
+	font-family: 'Noto', sans-serif;
+	padding: 0px 10px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
+	transition: 0.2s;
+	cursor: pointer;
+	user-select: none;
+}
+
+.UnblockButton, .acceptButton {
+	height: 60px;
+	width: 140px;
+	margin: auto 0;
+	margin-right: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	font-size: 20px;
+	font-weight: 600;
+	font-family: 'Noto', sans-serif;
+	padding: 0px 10px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
+	transition: 0.2s;
+	cursor: pointer;
+	user-select: none;
+}
+
+.acceptButton {
+	width: 240px;
+}
+
+.profilText, .acceptText {
+	margin: auto 0;
+	height: fit-content;
+	width: fit-content;
+	position: relative;
+	left: 25px;
+}
+
+.BattleContainer {
+	height: 60px;
+	width: 115px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.miniProfilButton {
+	height: 25px;
+	width: 130px;
+	margin: auto 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 5px;
+	font-weight: 600;
+	font-family: 'Noto', sans-serif;
+	padding: 0px 10px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
+	transition: 0.2s;
+	cursor: pointer;
+	user-select: none;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.miniProfilText {
+	margin: auto 0;
+	height: fit-content;
+	width: fit-content;
+	position: relative;
+
+	font-size: 20px;
+}
+
+.unblockText {
+	margin: auto 0;
+	height: fit-content;
+	width: fit-content;
+	position: relative;
+	left: 25px;
+}
+
+.profilIcon, .acceptIcon {
+	margin: auto 0;
+	/* background-color: green; */
+	transform: scale(2.2);
+	position: relative;
+	left: 10px;
+}
+
+.unblockIcon {
+	margin: auto 0;
+	/* background-color: green; */
+	transform: scale(2.2);
+	position: relative;
+	left: 10px;
+}
+
+.ProfilButton:hover, .miniProfilButton:hover, .UnblockButton:hover, .acceptButton:hover{
+	background-color: rgba(121, 121, 121, 0.219);
+}
+
+@media screen and (max-width: 1450px) {
+	.ProfilButton {
+		height: 60px;
+		width: 100px;
+	}
+
+	.profilIcon {
+		transform: scale(1.8);
+		left: 2px;
+	}
+
+	.profilText {
+		font-size: 20px;
+		left: 15px;
+	}
+
+	.miniProfilButton
+	{
+		height: 25px;
+		width: 100px;
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	.ProfilButton {
+		height: 60px;
+		width: 60px;
+		padding: 3px;
+	}
+
+	.profilIcon {
+		transform: scale(2.5);
+		left: 0px;
+		margin: auto;
+	}
+
+	.profilText {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.profil {
+		flex-direction: column;
+		justify-content: center;
+		height: 170px;
+		gap: 0px;
+	}
+
+	.profilInfos {
+		height: 100px;
+	}
+
+	.profilInteraction {
+		width: 100%;
+		justify-content: space-evenly;
+		gap: 0px;
+		margin: 0 auto;
+	}
+
+	.ProfilButton {
+		height: 40px;
+		width: 110px;
+		padding: 3px 7px;
+	}
+
+	.profilIcon {
+		transform: scale(1.75);
+		left: 0px;
+	}
+
+	.profilText {
+		font-size: 20px;
+		left: 0px;
+		display: block;
+	}
+
+	.miniProfilButton
+	{
+		height: 12.5px;
+		width: 110px;
+		padding: 3px;
+	}
+
+	.miniProfilText
+	{
+		top: -5px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+
+	.ProfilButton {
+		height: 40px;
+		width: 40px;
+		padding: 5px;
+	}
+
+	.profilText {
+		display: none;
+	}
+
+	.miniProfilButton
+	{
+		height: 12.5px;
+		width: 100px;
+		padding: 3px;
+	}
+
+	.miniProfilText
+	{
+		top: -5px;
+	}
+}
+
+.blockButton {
+	background-color: rgb(255, 59, 59);
+}
+
+.load {
+	height: fit-content;
+	width: fit-content;
+	margin: 0 auto;
+	margin-top: 25px;
+
+}
+
+.hidden {
+	display: none;
+}

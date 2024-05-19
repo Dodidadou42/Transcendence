@@ -1,0 +1,1248 @@
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#body_profil {
+	min-height: 300px;
+	height: fit-content;
+	width: 100%;
+	max-width: 1400px;
+	/* background-color: rgba(0, 166, 255, 0.137); */
+	padding-bottom: 20px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+
+#profilHead_dprofil {
+	height: fit-content;
+	/* min-height: 500px; */
+	width: 95%;
+	max-width: 800px;
+	/* background-color: rgba(255, 0, 0, 0.322); */
+	margin: 0 auto;
+	margin-top: 40px;
+	position: relative;
+}
+
+#box1_dprofil {
+	height: fit-content;
+	padding: 15px 0;
+	width: 100%;
+	/* background-color: aliceblue; */
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 15px;
+}
+
+#InfoBox1_dprofil {
+	width: calc(550px);
+	/* min-height: 200px; */
+	height: fit-content;
+	padding: 4px 0;
+	/* background-color: rgb(255, 166, 166); */
+	margin: 0;
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: baseline;
+	gap: 15px;
+}
+
+.infoBox1Info_dprofil {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+#imgOut_dprofil {
+	height: 204px;
+	width: 204px;
+	background-color: white;
+	border-radius: 5px;
+	margin: 0;
+}
+
+#imgIn_dprofil {
+	height: calc(100% - 8px);
+	width: calc(100% - 8px);
+	position: relative;
+	top: 4px;
+	left: 4px;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+#userImg_dprofil {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	border-radius: 15px;
+	object-fit: cover;
+	object-position: center;
+}
+
+#UidModif_dprofil {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: fit-content;
+	font-size: 25px;
+	font-weight: 400;
+	font-family: 'Noto', sans-serif;
+	/* background-color: white; */
+}
+
+#Uid_dprofil {
+	width: fit-content;
+	min-width: 20%;
+	max-width: 60%;
+	height: fit-content;
+	/* background-color: blueviolet; */
+	word-wrap: break-word;
+	text-align: right;
+}
+
+#modif_dprofil {
+	width: fit-content;
+	height: fit-content;
+	background-color: rgb(228, 228, 228);
+	border: 1px solid white;
+	margin-left: 20px;
+	cursor: pointer;
+	user-select: none;
+	padding: 0 4px;
+	border-radius: 3px;
+	font-family: 'Kanit', sans-serif;
+}
+
+#modif_dprofil:hover {
+	background-color: rgb(207, 207, 207);
+}
+
+#pseudo_dprofil {
+	width: 80%;
+	height: fit-content;
+	word-wrap: break-word;
+	/* background-color: white; */
+	margin: 0 auto;
+	font-size: 25px;
+	font-weight: 400;
+	font-family: 'Noto', sans-serif;
+}
+
+#desc_dprofil {
+	width: 80%;
+	height: fit-content;
+	word-wrap: break-word;
+	/* background-color: white; */
+	margin: 0 auto;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: 'Noto', sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+	/* #profilHead {
+		height: 800px;
+	} */
+
+	#box1_dprofil {
+		flex-direction: column;
+	}
+
+	#imgOut_dprofil {
+		margin: 0 auto;
+	}
+
+	#InfoBox1_dprofil {
+		width: calc(100% - 20px);
+		margin: 0 auto;
+	}
+
+	#Uid_dprofil {
+		font-weight: 600;
+		font-size: 20px;
+	}
+
+	#UidModif_dprofil {
+		font-size: 15px;
+	}
+	#pseudo_dprofil {
+		font-size: 15px;
+		width: calc(100% - 10px);
+		max-width: 500px;
+	}
+	#desc_dprofil {
+		max-width: 500px;
+		width: calc(100% - 10px);
+	}
+}
+
+/* ------------------- */
+
+#Level_dprofil {
+	width: calc(100% - 100px);
+	max-width: 1400px;
+	height: 50px;
+	border-radius: 25px;
+	background-color: rgb(201, 201, 255);
+	margin: 0 auto;
+	margin-top: 25px;
+
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+#lvl_dprofil {
+	height: 100px;
+	width: 40%;
+	background: url('./p1.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	position: relative;
+	top: -80px;
+
+	transform: rotateZ(2deg);
+}
+
+#lvltext_dprofil {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 3;
+	margin: auto 0;
+	font-size: 20px;
+	font-weight: 600;
+	font-family: 'Noto', sans-serif;
+	text-align: center;
+	/* background-color: orange; */
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* ------ */
+
+#Stats_dprofil {
+	width: calc(100% - 100px);
+	max-width: 1400px;
+	height: fit-content;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 40px;
+}
+
+.statspanel_dprofil {
+	width: fit-content;
+	height: fit-content;
+	/* background-color: rgba(255, 0, 0, 0.267); */
+}
+
+@media screen and (max-width: 1050px) {
+	#Stats_dprofil {
+		flex-direction: column;
+		justify-content: baseline;
+		gap: 20px;
+	}
+
+	.statspanel_dprofil {
+		width: fit-content;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	#Level_dprofil {
+		width: calc(100% - 20px);
+	}
+
+	#Stats_dprofil {
+		width: 100%;
+	}
+}
+
+.stat_dprofil {
+	height: 40px;
+	/* width: 300px; */
+	display: flex;
+	flex-direction: row;
+
+	/* background-color: blue; */
+}
+
+@media screen and (max-width: 1050px) {
+	.stat_dprofil {
+		width: 300px;
+	}
+}
+
+.statTitle_dprofil {
+	width: 180px;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	font-size: 17px;
+	font-weight: 600;
+	font-family: 'Noto', sans-serif;
+
+	/* background-color: red; */
+}
+
+.statName_dprofil {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+.statTitletext_dprofil {
+	margin: auto 0;
+}
+
+.statDot_dprofil {
+	margin: auto 0;
+}
+
+.statIcon_dprofil {
+	height: fit-content;
+	width: fit-content;
+	transform: scale(1.2);
+	margin: auto 0;
+	margin-left: 10px;
+}
+
+.statValue_dprofil {
+	width: fit-content;
+	height: fit-content;
+	margin: auto 0;
+	margin-left: 15px;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: 'Noto', sans-serif;
+}
+
+#history {
+	height: fit-content;
+	min-height: 100px;
+	/* background-color: white; */
+	background-color: rgba(207, 207, 207, 0.527);
+	width: calc(100% - 100px);
+	max-width: 600px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	border: 2px solid rgb(0, 0, 0);
+	border-radius: 5px;
+}
+
+#historyHeader {
+	font-size: 20px;
+	font-weight: 600;
+	font-family: 'Noto', sans-serif;
+	width: 100%;
+	height: fit-content;
+	text-align: center;
+	border-bottom: 2px solid black;
+	padding: 4px 0;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.gameH {
+	height: 75px;
+	width: calc(100% - 10px);
+	margin: 0 auto;
+	margin-top: 5px;
+	border-radius: 10px;
+
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+}
+
+.gameL {
+	background-color: rgb(212, 212, 255);
+}
+
+.gameW {
+	background-color: rgb(255, 199, 181);
+}
+
+.gameH:last-child {
+	margin-bottom: 5px;
+}
+
+.ghHeader {
+	height: 16px;
+	width: 100%;
+	font-size: 12px;
+	font-weight: 600;
+	font-family: 'Kanit', sans-serif;
+	color: rgb(0, 0, 0);
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	div {
+		display: flex;
+		flex-direction: row;
+	}
+
+	border-bottom: 1px solid rgba(255, 255, 255, 0.658);
+}
+
+.ghMode {
+	margin-left: 15px;
+}
+
+.ghtime {
+	margin-left: 15px;
+	font-weight: 500;
+}
+
+.ghHo {
+	margin-right: 15px;
+}
+
+.ghHo:hover {
+	color: #888888;
+	cursor: pointer;
+}
+
+.ghBody {
+	width: 100%;
+	height: calc(100% - 17px);
+	display: flex;
+	flex-direction: row;
+}
+
+.ghIcon {
+	height: fit-content;
+	width: fit-content;
+	margin: auto 0;
+	margin-left: 15px;
+
+	transform: scale(1.5);
+}
+
+.ghScore {
+	height: fit-content;
+	width: fit-content;
+	margin: auto 0;
+	margin-left: 10px;
+	font-size: 15px;
+	font-weight: 600;
+	font-family: 'Kanit', sans-serif;
+}
+
+.ghOponent {
+	height: fit-content;
+	width: fit-content;
+	max-width: 65%;
+	margin: auto 0;
+	margin-left: 10px;
+	font-size: 15px;
+	font-weight: 600;
+	font-family: 'Kanit', sans-serif;
+	overflow: hidden;
+}
+
+#historyLoadMore {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 600;
+	font-family: 'Kanit', sans-serif;
+}
+  
+#historyLoadMore:hover {
+	background-color: #0056b3;
+}
+
+@media screen and (max-width: 800px) {
+	#history {
+		width: calc(100% - 10px);
+	}
+}
+
+
+#sizePlus_dprofil {
+	width: 100%;
+	height: 100px;
+}
+
+#Achievement_dprofil {
+	width: calc(100%  - 100px);
+	max-width: 1300px;
+	height: fit-content;
+	margin: 0 auto;
+	margin-top: 20px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 20px;
+}
+
+.achievement_dprofil {
+	height: 75px;
+	width: 400px;
+	border-radius: 20px;
+	outline: 1px solid orange;
+	display: flex;
+	flex-direction: row;
+}
+
+.achievementImage_dprofil {
+	height: 75px;
+	width: 75px;
+	border-radius: 20px;
+}
+
+@media screen and (max-width: 1700px) {
+	#Achievement_dprofil {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.achievement_dprofil {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 400px;
+	}
+}
+
+#EditBody_dprofil {
+	min-height: 300px;
+	height: fit-content;
+	width: 100%;
+	max-width: 1400px;
+	background-color: rgba(255, 255, 255, 0.377);
+	padding-bottom: 20px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#editImgOut_dprofil {
+	height: 80px;
+	width: 400px;
+	border-radius: 7px;
+	background-color: rgb(230, 230, 230);
+	margin: 0 auto;
+	margin-top: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+}
+
+#editTitle_dprofil {
+	width: 370px;
+	height: fit-content;
+	font-size: 25px;
+	font-weight: 400;
+	font-family: 'Kanit', sans-serif;
+	margin: 0 auto;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+#editPseudoOut_dprofil {
+	height: 30px;
+	width: 400px;
+	border-radius: 7px;
+	/* background-color: rgb(230, 230, 230); */
+	border: 2px solid rgb(230, 230, 230);
+	background-color: white;
+	margin: 0 auto;
+	margin-top: 25px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+}
+
+#editDescOut_dprofil {
+	height: 90px;
+	width: 400px;
+	border-radius: 7px;
+	/* background-color: rgb(230, 230, 230); */
+	border: 2px solid rgb(230, 230, 230);
+	background-color: white;
+	margin: 0 auto;
+	margin-top: 25px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+}
+
+#editImg_dprofil {
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	margin: 0;
+	overflow: hidden;
+	margin: auto 0;
+	margin-left: 10px;
+	border-radius: 15px;
+	object-fit: cover;
+	object-position: center;
+}
+
+#imgLoading_dprofil {
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	margin: 0;
+	overflow: hidden;
+	margin: auto 0;
+	margin-left: 10px;
+	background-color: red;
+}
+
+#editImgButton_dprofil{
+	background-color: rgba(0, 140, 255, 0.164);
+	background-color: rgb(0, 140, 255);
+	height: fit-content;
+	max-height: 40px;
+	width: fit-content;
+	max-width: 120px;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'Kanit', sans-serif;
+	color: white;
+	border-radius: 7px;
+	margin: auto 0;
+	margin-right: 15px;
+	padding: 2px 4px;
+	cursor: pointer;
+	user-select: none;
+	position: relative;
+	overflow: hidden;
+}
+
+#editImgButtonC_dprofil {
+	width: 100%;
+	height: 100%;
+	transform: scale(2.2);
+	position: relative;
+	top: 3px;
+}
+
+#editImgButtonCache_dprofil {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgb(0, 140, 255);
+	pointer-events: none;
+	text-align: center;
+}
+
+#editImgButton_dprofil:hover {
+	#editImgButtonCache {
+		background-color: rgb(0, 103, 187);
+	}
+
+}
+
+.editSubmit_dprofil {
+	width: 120px;
+	height: fit-content;
+	background-color: rgb(0, 140, 255);
+	border-radius: 5px;
+	padding: 2px 4px;
+	margin: 0 auto;
+	user-select: none;
+	cursor: pointer;
+	margin-top: 15px;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Kanit', sans-serif;
+	text-align: center;
+	color: white;
+}
+
+.editSubmit_dprofil:hover {
+	background-color: rgb(0, 103, 187);
+}
+
+.editSubmitUnactive_dprofil {
+	background-color: rgb(44, 68, 87);
+	pointer-events: none;
+}
+
+#editBack_dprofil {
+	width: 100px;
+	height: fit-content;
+	background-color: rgb(230, 230, 230);
+	border-radius: 5px;
+	padding: 2px 4px;
+	margin: 0 auto;
+	user-select: none;
+	cursor: pointer;
+	margin-top: 5px;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Kanit', sans-serif;
+	text-align: center;
+}
+
+#editBack_dprofil:hover {
+	background-color: rgb(212, 212, 212);
+}
+
+#editPseudoInput_dprofil {
+	width: calc(100% - 50px);
+	height: 100%;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'Courier New', monospace;
+	outline: none;
+	border: none;
+}
+
+#editPseudoInput_dprofil:focus {
+	outline: none;
+}
+
+#editPseudoInputCount_dprofil, #editDescInputCount_dprofil {
+	height: fit-content;
+	width: fit-content;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: 'Courier New', monospace;
+	margin: auto 0;
+	margin-bottom: 0;
+}
+
+#editDesc_dprofil {
+	width: calc(100% - 50px);
+	height: 100%;
+	resize: none;
+	outline: none;
+	border: none;
+}
+
+#editDesc_dprofil:focus {
+	outline: none;
+}
+
+#updateNotif_dprofil {
+	height: 30px;
+	width: 100%;
+	margin: 0 auto;
+	position: fixed;
+	bottom: 0px;
+	overflow: hidden;
+}
+
+#updateNotifBox_dprofil {
+	height: 100%;
+	width: 100%;
+	background-color: rgb(82, 82, 82);
+	margin: auto;
+	position: relative;
+	bottom: -40px;
+}
+
+.updateNotifAnim_dprofil {
+	animation: 2s updateNotif linear forwards;
+}
+
+#updateNotifTitle_dprofil {
+	width: fit-content;
+	height: fit-content;
+	color: white;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: 'Kanit', sans-serif;
+	margin: 0 auto;
+}
+
+@keyframes  updateNotif{
+	0% {
+		bottom: -40px;
+	}
+	20% {
+		bottom: 0;
+	}
+	80% {
+		bottom: 0;
+	}
+	100% {
+		bottom: -40px;
+	}
+}
+
+#activateA2F_dprofil {
+	text-align: center;
+}
+
+#activateA2FButton_dprofil {
+	cursor: pointer;
+	width: 350px;
+	height: fit-content;
+	background-color: rgb(0, 127, 0);
+	border-radius: 5px;
+	padding: 2px 4px;
+	margin: 0 auto;
+	user-select: none;
+	margin-top: 15px;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Kanit', sans-serif;
+	text-align: center;
+	color: white;
+}
+
+#activateA2FButton_dprofil:hover {
+	background-color: rgb(0, 191, 0);
+}
+
+#desactivateA2F_dprofil {
+	text-align: center;
+}
+
+#desactivateA2FButton_dprofil {
+	cursor: pointer;
+	width: 200px;
+	height: fit-content;
+	background-color: rgb(127, 0, 0);
+	border-radius: 5px;
+	padding: 2px 4px;
+	margin: 0 auto;
+	user-select: none;
+	margin-top: 15px;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Kanit', sans-serif;
+	text-align: center;
+	color: white;
+}
+
+#desactivateA2FButton_dprofil:hover {
+	background-color: rgb(191, 0, 0);
+}
+
+#activationA2F_dprofil {
+	background-color: rgba(30, 30, 30);
+	margin: 20px auto;
+	padding: 20px;
+	border-radius: 10px;
+	width: 400px;
+	text-align: center;
+}
+
+#desactivationA2F_dprofil {
+	background-color: rgba(30, 30, 30);
+	margin: 20px auto;
+	padding: 20px;
+	border-radius: 10px;
+	width: 400px;
+	text-align: center;
+}
+
+#title_dprofil {
+	font-size: 24px;
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	margin-bottom: 10px;
+}
+
+#subtitle_dprofil {
+	font-size: 14px;
+	color: rgb(191, 191, 191);
+	margin-bottom: 20px;
+}
+
+#divider_dprofil {
+	border-top: 1px solid #999;
+	margin: 20px 0;
+}
+
+#step1_dprofil {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+#step1-img_dprofil {
+	width: 30%;
+}
+
+#step1_dprofil img {
+	max-width: 80%;
+	height: auto;
+	margin: auto auto;
+}
+
+#step1-content_dprofil {
+	width: 70%;
+	margin: auto auto;
+}
+
+.step-title_dprofil {
+	font-size: 18px;
+	color: rgb(191, 191, 191);
+	text-align: left;
+}
+
+.step-content_dprofil {
+	font-size: 14px;
+	color: rgb(127, 127, 127);
+	text-align: left;
+}
+
+.step-content_dprofil a {
+	color: rgb(0, 127, 255);
+	text-decoration: none;
+}
+
+.step-content_dprofil a:hover {
+	text-decoration: underline;
+}
+
+#step-key_dprofil {
+	font-family: arial;
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+	text-align: left;
+}
+
+.marge-top_dprofil {
+	margin-top: 10px;
+}
+
+#activation-container_dprofil {
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #fff;
+}
+
+#activation-code_dprofil {
+	background-color: #444;
+	color: #fff;
+	border: none;
+	padding: 8px;
+	border-radius: 3px;
+	width: 60px;
+	text-align: center;
+}
+
+#activate-button_dprofil {
+	color: #fff;
+	border: none;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+.activate-button-not-ok_dprofil {
+	background-color: rgb(44, 68, 87);
+}
+
+.activate-button-ok_dprofil {
+	background-color: rgb(0, 140, 255);
+	cursor: pointer;
+}
+
+.activate-button-ok_dprofil:hover {
+	background-color: rgb(0, 103, 187);
+	cursor: pointer;
+}
+
+#subtitle_red_dprofil {
+	font-size: 14px;
+	color: rgb(191, 0, 0);
+	margin-bottom: 20px;
+}
+
+#desactivation-container_dprofil {
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #fff;
+}
+
+#desactivation-code_dprofil {
+	background-color: #444;
+	color: #fff;
+	border: none;
+	padding: 8px;
+	border-radius: 3px;
+	width: 60px;
+	text-align: center;
+}
+
+#desactivate-button_dprofil {
+	color: #fff;
+	border: none;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+.desactivate-button-not-ok_dprofil {
+	background-color: rgb(87, 44, 44);
+}
+
+.desactivate-button-ok_dprofil {
+	background-color: rgb(191, 0, 0);
+	cursor: pointer;
+}
+
+.desactivate-button-ok_dprofil:hover {
+	background-color: rgb(127, 0, 0);
+	cursor: pointer;
+}
+
+.activateChangePassword_dprofil {
+	height: 35px;
+	width: 300px;
+	border-radius: 7px;
+	border: 2px solid rgb(230, 230, 230);
+	background-color: rgb(0, 140, 255);
+	color: white;
+	margin: 0 auto;
+	margin-top: 25px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	user-select: none;
+	cursor: pointer;
+
+	div {
+		width: 100%;
+		height: fit-content;
+		font-size: 20px;
+		font-weight: 500;
+		font-family: 'Kanit', sans-serif;
+		text-align: center;
+	}
+}
+
+.activateChangePassword_dprofil:hover {
+	background-color: rgb(0, 95, 173);
+}
+
+.editPasswordOut_dprofil {
+	height: fit-content;
+	width: 400px;
+	border-radius: 7px;
+	background-color: rgba(255, 255, 255, 0.336);
+	background: url(../../../img/blue2_.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+	margin-top: 25px;
+
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	padding: 10px 0;
+}
+
+#editPasswordTitle_dprofil {
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Kanit', sans-serif;
+	/* color: white; */
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	user-select: none;
+}
+
+.editPasswordInput_dprofil {
+	height: 30px;
+	width: 380px;
+	border-radius: 7px;
+	border: 2px solid rgb(230, 230, 230);
+	background-color: white;
+	margin: 0 auto;
+	margin-top: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+
+	input {
+		width: calc(100% - 50px);
+		height: 100%;
+		font-size: 20px;
+		font-weight: 400;
+		font-family: 'Noto', sans-serif;
+		outline: none;
+		border: none;
+	}
+}
+
+.passwodInputBadInput_dprofil {
+	border: 1px solid red;
+	outline: 1px solid red;
+}
+
+#editPasswordSend_dprofil {
+	width: 200px;
+	background-color: rgb(0, 140, 255);
+	height: 35px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	cursor: pointer;
+	user-select: none;
+	margin: 0 auto;
+	margin-top: 10px;
+	border-radius: 15px;
+
+	transform: scale(0.8);
+
+	div {
+		width: 100%;
+		height: fit-content;
+		text-align: center;
+		font-size: 20px;
+		font-weight: 400;
+		font-family: 'Noto', sans-serif;
+		color: white;
+	}
+
+}
+
+#editPasswordSend_dprofil:hover {
+	background-color: rgb(0, 98, 179);
+}
+
+#editPasswordPanelCross_dprofil {
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 50%;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: 'Noto', sans-serif;
+	user-select: none;
+	text-align: center;
+	transition: 0.2s;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 3px;
+
+	div {
+		height: fit-content;
+		width: fit-content;
+		text-align: center;
+		transition: 0.2s;
+		position: relative;
+		right: 2px;
+		top: 1px;
+	}
+}
+
+#editPasswordPanelCross_dprofil:hover {
+	transform: scale(1.2);
+
+	div {
+		transform: rotateZ(90deg);
+	}
+}
+
+.deleteAccountBox_dprofil {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: rgba(128, 128, 128, 0.486);
+	pointer-events: auto;
+	display: grid;
+	z-index: 5;
+}
+
+.deleteAccountPanel_dprofil {
+	background-color: white;
+	height: 100px;
+	width: 350px;
+	align-self: center;
+	border-radius: 7px;
+	box-shadow: 4px 4px 8px grey;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.confirmDeleteTitle_dprofil {
+	width: 95%;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+.confirmDeleteButtons_dprofil {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.deleteAccountPanelButton_dprofil {
+	width: 100px;
+	margin: 0 auto;
+}
+
+#confirmDeleteAccount_dprofil {
+	color: white;
+	border-color: red;
+	border-radius: 5px;
+	background-color: rgb(255, 104, 104);
+}
+
+#confirmDeleteAccount_dprofil:hover {
+	background-color: rgb(202, 80, 80);
+}
+
+.hidden {
+	display: none;
+}

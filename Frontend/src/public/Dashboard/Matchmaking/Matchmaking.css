@@ -1,0 +1,922 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.matchmakingBody, .customGameBody, .joinGroupBody{
+    width: 100%;
+    max-width: 1000px;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+#CGtitle, #CGtitleOther, #Matchmakingtitle {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    font-size: 40px;
+    color: black;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin-top: 1px;
+    position: relative;
+    top: 25px;
+}
+
+#ModeTitle {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 25px;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+             1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    position: relative;
+    top: 10px;
+}
+
+#mode {
+    width: calc(100% - 20px);
+    max-width: 600px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.modeLabel {
+    height: 100%;
+    margin: auto;
+    display: grid;
+
+    div {
+        font-size: 20px;
+        color: black;
+        font-family: "Protest Strike", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        height: fit-content;
+        width: fit-content;
+        place-self: center;
+        transition: 0.2s;
+        user-select: none;
+    }
+}
+
+.modeLabel:hover {
+    div {
+        transform: scale(1.2);
+    }
+}
+
+#mode1v1Custom {
+    background: url('./backImg1v1Button.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#mode2v2Custom {
+    background: url('./backImg2v2Button.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.selection1v1AnimationLeft {
+    animation: Aselection1v1AnimationLeft 0.2s ease-in-out forwards;
+}
+
+.selection1v1AnimationRight {
+    animation: Aselection1v1AnimationRight 0.2s ease-in-out forwards;
+}
+
+.selection2v2AnimationLeft {
+    animation: Aselection2v2AnimationLeft 0.2s ease-in-out forwards;
+}
+
+.selection2v2AnimationRight {
+    animation: Aselection2v2AnimationRight 0.2s ease-in-out forwards;
+}
+
+@keyframes Aselection1v1AnimationLeft {
+    0% {
+        width: 20%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+@keyframes Aselection1v1AnimationRight {
+    0% {
+        width: 80%;
+    }
+    100% {
+        width: 20%;
+    }
+}
+@keyframes Aselection2v2AnimationLeft {
+    0% {
+        width: 80%;
+    }
+    100% {
+        width: 20%;
+    }
+}
+@keyframes Aselection2v2AnimationRight {
+    0% {
+        width: 20%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+#withPowerups {
+    width: calc(100% - 20px);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#withPowerupsLabel {
+    height: fit-content;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+             1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    margin: auto 0;
+    margin-left: 25px;
+}
+
+#powerupsWheelsBox {
+    height: 22px;
+    width: 50px;
+    margin: auto 0;
+    display: grid;
+    border: 2px solid black;
+
+    overflow: hidden;
+    position: relative;
+    margin-right: 25px;
+
+    user-select: none;
+    cursor: pointer;
+}
+
+#powerupsWheels {
+    align-self: center;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+    transform: scale(1.25);
+    position: relative;
+    top: 4px;
+
+    div {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        font-size: 15px;
+        color: black;
+        font-family: "Protest Strike", sans-serif;
+        transition: 0.25s;
+    }
+}
+
+#cgpuON {
+    background-color: red;
+    background: url('./gradient1.jpg');
+    background-position: center;
+    background-size: contain;
+}
+
+#cgpuOFF {
+    background-color: blue;
+    background: url('./gradient2.jpg');
+    background-position: center;
+    background-size: contain;
+    transform: rotateZ(180deg);
+}
+
+.ApowerupsCustomOn {
+    animation: powerupsCustomOn 0.2s ease-in-out forwards;
+}
+.ApowerupsCustomOff {
+    animation: powerupsCustomOff 0.2s ease-in-out forwards;
+}
+
+@keyframes powerupsCustomOn {
+    0% {
+        transform: rotateZ(180deg) scale(1.25);
+    }
+    100% {
+        transform: rotateZ(0deg) scale(1.25);
+    }
+}
+
+@keyframes powerupsCustomOff {
+    0% {
+        transform: rotateZ(0deg) scale(1.25);
+    }
+    100% {
+        transform: rotateZ(180deg) scale(1.25);
+    }
+}
+
+#customPlayers, #customPlayersOther {
+    width: calc(100% - 20px);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#customPlayersTitle, #customPlayersTitleOther {
+    width: 100%;
+    height: fit-content;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+             1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    position: relative;
+    top: 15px;
+}
+
+#customPlayersBox, #customPlayersBoxOther {
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 300px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.548);
+}
+
+.customgamePlayerPlace {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 22%;
+    border-bottom: 1px dashed gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cgPlayerImg {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    object-position: center;
+    margin: auto 0;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+.customgamePlayerInfos, .customgamePlayerButton {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.cgPlayerName {
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    transition: 0.25s;
+    margin: auto 0;
+    margin-left: 5px;
+}
+
+.cgWaitName {
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    transition: 0.25s;
+    margin: auto 0;
+    margin-left: 5px;
+}
+
+.cgPlayerButtons {
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    font-family: "Vina", sans-serif;
+    font-weight: 100;
+    user-select: none;
+    margin: auto 0;
+    background-color: whitesmoke;
+    margin-right: 10px;
+    transition: 0.25s;
+    cursor: pointer;
+    padding: 2px 6px ;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.39);
+}
+
+.cgKickButton {
+    background-color: red;
+    font-weight: 200;
+}
+
+.cgPlayerButtons:hover {
+    transform: scale(1.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.39);
+}
+
+.placeUnable {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.cgPlayerRecap {
+    height: 11%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    div {
+        height: fit-content;
+        width: fit-content;
+        margin: auto 0;
+        font-size: 15px;
+        color: black;
+        font-family: "Protest Strike", sans-serif;
+    }
+}
+
+.invitePlayerPanelBox, .addBotPanelBox {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #3131316b;
+    pointer-events: auto;
+    z-index: 5;
+}
+
+#invitePlayerPanelLayer, #addBotPanelLayer {
+    height: fit-content;
+    min-height: 300px;
+    width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+#invitePlayerPanelLayer {
+    min-height: 400px;
+}
+
+#invitePlayerPanelTitle, .addBotPanelTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    font-family: "Kanit", sans-serif;
+}
+
+#invitePlayerPanelSearch {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+
+    input {
+        font-size: 20px;
+        width: 320px;
+        height: 20px;
+        color: black;
+        font-family: "Kanit", sans-serif;
+    }
+}
+
+#invitePlayerPaneldata {
+    height: 300px;
+    width: calc(100% - 20px);
+    background-color: whitesmoke;
+    overflow-y: scroll;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#invitePlayerPanelBack, #addBotPanelBack {
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 7px;
+    font-size: 15px;
+    color: black;
+    font-family: "Kanit", sans-serif;
+    /* background-color: whitesmoke; */
+    user-select: none;
+    cursor: pointer;
+    transition: 0.25s;
+    padding: 1px 10px;
+}
+
+#invitePlayerPanelBack:hover, #addBotPanelBack:hover {
+    background-color: whitesmoke;
+    box-shadow: 0 1px 1px rgba(54, 54, 54, 0.253);
+}
+
+.waitingLoaderInvitePlayer {
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 50px;
+    transform: scale(0.8);
+    position: relative;
+    left: 4px;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #000000;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.invitePlayerPaneldataProfil {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: white;
+    margin-top: 2px;
+}
+
+.invitePlayerPaneldataProfilInfos, .invitePlayerPaneldataProfilButton {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.invitePlayerPaneldataProfilImg {
+    height: 35px;
+    width: 35px;
+    margin: auto 10px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.invitePlayerPaneldataProfilName {
+    height: fit-content;
+    width: fit-content;
+    max-width: 300px;
+    overflow: hidden;
+    font-size: 20px;
+    color: black;
+    font-family: "Kanit", sans-serif;
+    margin: auto 0;
+}
+
+.invitePlayerPaneldataProfilButtonInvite {
+    font-size: 15px;
+    color: black;
+    font-family: "Vina", sans-serif;
+    height: fit-content;
+    width: fit-content;
+    padding: 2px 10px;
+    margin: auto 0;
+    margin-right: 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.invitePlayerPaneldataProfilButtonInvite:hover {
+    background-color: whitesmoke;
+}
+
+.addBotPanelSelection {
+    width: 380px;
+    height:224px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+
+.addBotPanelSelectionProfil {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.addBotPanelSelectionProfilInfo, .addBotPanelSelectionProfilButton {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: fit-content;
+}
+
+.addBotPanelSelectionProfilImg {
+    height: 55px;
+    width: 55px;
+    margin: auto 15px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.addBotPanelSelectionProfilName {
+    height: fit-content;
+    width: fit-content;
+    font-size: 20px;
+    color: black;
+    font-family: "Vina", sans-serif;
+    margin: auto 0;
+}
+
+.addBOTbutton {
+    height: fit-content;
+    width: fit-content;
+    font-size: 15px;
+    color: black;
+    font-family: "Vina", sans-serif;
+    padding: 2px 10px;
+    box-shadow: 0 1px 1px rgba(44, 44, 44, 0.493);
+    user-select: none;
+    cursor: pointer;
+    margin: auto 0;
+    margin-right: 15px;
+    border-radius: 1px;
+}
+
+.addBOTbutton:hover {
+    background-color: whitesmoke;
+    box-shadow: 0 2px 2px rgba(44, 44, 44, 0.692);
+}
+
+#ComeBackToSelection {
+    height: fit-content;
+    width: fit-content;
+    margin: 0;
+    font-size: 12px;
+    color: black;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    user-select: none;
+    box-shadow: 2px 2px 8px grey;
+    /* border: 2px solid rgb(0, 0, 0); */
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 2px;
+    padding: 3px 10px ;
+    transition: 0.2s;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    cursor: pointer;
+}
+
+#ComeBackToSelection:hover {
+    background-color: rgb(209, 209, 209);
+}
+
+#CGGroupLeaveOther, #cancelMatchmakingBack {
+    height: fit-content;
+    width: fit-content;
+    border: 1px solid red;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 15px;
+    color: white;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    user-select: none;
+    background-color: rgb(228, 0, 0);
+    padding: 3px 8px;
+    transition: 0.2s;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px grey;
+}
+
+#cancelMatchmakingBack {
+    margin-top: 60px;
+}
+
+#CGGroupLeaveOther:hover, #cancelMatchmakingBack:hover {
+    transform: scale(1.05);
+    background-color: rgb(212, 0, 0);
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 3px solid #FFF;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+.matchmakingLoaderWait {
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+#customModeOther {
+    width: 400px;
+    height: fit-content;
+    margin: 40px auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#customGamemodeOther, #customPowerupsOther {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+#ModeTitleOther, #PowerTitleOther {
+    width: fit-content;
+    height: fit-content;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+             1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+#cgModeOther, #cgPowerOther {
+    width: fit-content;
+    height: fit-content;
+    font-size: 25px;
+    color: black;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+.matchProfile, .matchProfile2 {
+    height: 40px;
+    min-height: 40px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.matchProfile2 {
+    justify-content: right;
+}
+
+.matchProfile:hover, .matchProfile2:hover {
+    background-color: whitesmoke;
+}
+
+.matchTitle {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    top: -110px;
+    text-align: center;
+}
+
+.matchProfilePicture {
+    height: 35px;
+    width: 35px;
+    border-radius: 4px;
+    margin: auto 5px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.matchProfileName, .matchProfileNameR {
+    height: fit-content;
+    width: 130px;
+    max-width: 130px;
+    margin: auto 0;
+    font-size: 10px;
+    font-family: 'Kanit', sans-serif;
+    word-break: break-all;
+}
+
+.matchProfileNameR {
+    text-align: right;
+}
+
+.matchProfileIcon {
+    height: fit-content;
+    width: fit-content;
+    margin: auto 0;
+}
+
+.matchProfileIconImg {
+    height: 30px;
+    width: 30px;
+    display: grid;
+    overflow: hidden;
+    margin: auto 0;
+}
+
+.matchProfileIconImg_ {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1.2);
+    transform-origin: center;
+    align-self: center;
+}
+
+.matchStatus {
+    height: fit-content;
+    width: fit-content;
+    transform: scale(0.6);
+    margin: auto 0;
+    margin-top: 10px;
+}
+
+.matchProfileOut {
+    display: flex;
+    flex-direction: column;
+}
+
+.MatchFoundPanel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: fit-content;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.countBox {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    pointer-events: auto;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    background-color: rgba(168, 168, 168, 0.637);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.countPanel {
+    position: relative;
+    top: -50px;
+    margin: auto;
+    height: 150px;
+    width: 400px;
+    /* background-color: white; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 400px;
+}
+
+.countValue {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    font-size: 100px;
+    color: orangered;
+    text-shadow: 2px 2px 4px black;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    left: 1000px;
+    animation: startMatchCount 3.5s ease-in-out forwards;
+}
+
+@keyframes startMatchCount {
+    0% {
+        left: 1000px;
+    }
+    100% {
+        left: -665px;
+    }
+}
+
+.moreSpaceBotton {
+    height: 50px;
+    width: 100%;
+}
+
+.StartTheCustomGameON {
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    background-color: rgb(42, 212, 0);
+    border: 2px solid white;
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 6px;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.StartTheCustomGameON:hover {
+    transform: scale(1.05);
+    background-color: rgb(35, 177, 0);
+}
+
+.StartTheCustomGameOFF {
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    background-color: rgb(129, 129, 129);
+    border: 2px solid white;
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 6px;
+    color: white;
+    user-select: none;
+    cursor: not-allowed;
+}
+
+.hidden {
+    display: none;
+}

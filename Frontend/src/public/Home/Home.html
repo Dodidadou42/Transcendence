@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+		<style>
+			.hidden {
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	<div id="page_home" class="hidden">
+		<header id="header_home">
+			<div id="nav_home">
+				<div class="rightMenu_home">
+					<img id="img_42_home" src="./42.png">
+					<h1><a href="#">ft_transcendance</a></h1>
+					<h3><a href="#contact">Contacts</a></h3>
+					<h3><a href="#policy">Policy</a></h3>
+				</div>
+				<div id="connect_home">
+					<button id="RegisterButton_home" class="HomeNavButton_home">Sign in <span class="material-symbols-outlined" id="Gicon_home">chevron_right</span></button>
+				</div>
+				<div id="burgerMenu_home">
+					<button id="menu_home"><span class="material-symbols-outlined">menu</span></button>
+				</div>
+			</div>
+			<div id="HeadCache_home"></div>
+		</header>
+		
+		<div id="remove_space_home">
+			<section id="presentation_home">
+				<div class="sectionBody_home">
+					<div class="slideshow-container_home">
+						<img id="slide_home" width="100%" height="100%">
+						<div style="text-align:center">
+							<span class="dot_home"></span>
+							<span class="dot_home"></span>
+							<span class="dot_home"></span>
+							<span class="dot_home"></span>
+							<span class="dot_home"></span>
+							<span class="dot_home"></span>
+							<span class="dot_home"></span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="infos_home">
+			<div class="container_sep_home">
+				<div class="left_sep_home">
+				<div class="sectionBody_home">
+					<div class="center_home">
+						<h4>Welcome to ft_transcendance!</h4>
+					</div>
+
+					<h2>What is Pong?</h2>
+					<p>Pong is one of the earliest video games ever created. It's a simple game that simulates table tennis in a digital format. Each player controls a digital paddle and the goal is to hit the ball in such a way that your opponent cannot return it.</p>
+
+					<h2>Game Rules</h2>
+					<p>Here are the basic rules for playing Pong:</p>
+					<ul>
+						<li><strong>Game Objective</strong>: The goal is to beat your opponent by being the first to reach 10 points. A player scores a point each time the opponent misses the ball.</li>
+						<li><strong>Paddle Control</strong>: The player controls a paddle by moving it vertically on the left or right side of the screen. They can compete against another player controlling a second paddle on the opposite side.</li>
+						<li><strong>Gameplay</strong>: Players use the paddles to hit the ball back and forth.</li>
+					</ul>
+
+					<h2>Special Features of our Pong</h2>
+					<p>Our site offers a complete friends system, allowing you to connect with your friends, block unwanted users, chat in real-time, and create groups to play together.</p>
+					<p>You can also battle against our sophisticated AI for an additional challenge. Our AI is designed to offer a skill level suited to all players, from beginners to experts.</p>
+					<p>During the game, you can obtain special bonuses that can shorten or lengthen your paddle, add ice effects, or even introduce multi-balls into the game for an additional level of chaos and fun!</p>
+
+					<p>We hope you enjoy playing Pong on our site. Have fun!</p>
+					</div>
+					<div class="right_sep_home">
+						<video controls>
+							<source src="./transcendance.mp4" type="video/mp4">
+							Your web browser doesn't supports the video
+						</video>
+					</div>
+				</div>
+			</div>
+			</section>
+			<section id="burgerNav_home" class="hidden">
+			<div id="burgerNavHeader_home">
+				<h1 id="burgerNavHeaderTitle_home">ft_transcendance</h1>
+				<button id="burgerNavClose_home"><span class="material-symbols-outlined" id="CloseIcon_home">close</span></button>
+			</div>
+			<div id="burgerNavBody_home">
+				<a href="#policy" class="BurgerA_home"><div class="BgAt_home">Policy</div></a>
+				<a href="#contact" class="BurgerA_home"><div class="BgAt_home">Contacts</div></a>
+			</div>
+			<div id="burgerNavFooter_home">
+				<div id="signinalign_home">
+					<a id="RegisterButton_home" href="#connect" class="SignInButton_home">Sign in <span class="material-symbols-outlined" id="Gicon_home">chevron_right</span></a>
+				</div>
+			</div>
+			</section>
+			<footer id="footer_home">
+				<div id="blackFooter_home"></div>
+				<p id="copyright_home">© 2023 ft_transcendance. All Rights Reserved.</p>
+			</footer>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script type="module" src="./Home.js"></script>
+</html>

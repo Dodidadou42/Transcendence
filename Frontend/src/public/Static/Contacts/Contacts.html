@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Contacts</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+		<style>
+			.hidden {
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	<div id="page_contacts" class="hidden">
+		<section id="content_contacts">
+			<h1>Contact us</h1>
+			<h3>We’d love to hear from you.</h3>
+			<div id="form_contacts">
+				<div class="catName_contacts">Name</div>
+				<div class="cat_contacts">
+					<input type="text" class="input_contacts" id="name_contacts" required></input>
+				</div>
+				<div class="catError_contacts" id="nameError_contacts"></div>
+				<div class="catName_contacts">Email</div>
+				<div class="cat_contacts">
+					<input type="text" class="input_contacts" id="email_contacts" required></input>
+				</div>
+				<div class="catError_contacts" id="emailError_contacts"></div>
+				<div class="catName_contacts">About</div>
+				<div class="cat_contacts">
+					<input type="text" class="input_contacts" id="topic_contacts" required></input>
+				</div>
+				<div class="catError_contacts"></div>
+				<div class="catName_contacts">Message</div>
+				<div class="cat_contacts Mess_contacts">
+					<textarea class="input_contacts message_contacts" id="mess_contacts" required></textarea>
+				</div>
+				<div class="cat_contacts">
+					<button class="Send_contacts unusable_contacts" id="submit_contacts">Send</button>
+				</div>
+				<p class="more_contacts">We reject any involvement if the email address is incorrectly entered.</p>
+				<p class="more_contacts">© 2023 ft_transcendance. All Rights Reserved.</p>
+			</div>
+		</section>
+	</div>
+	<div id="NotificationsContainer"></div>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- a enlever pour eviter double import -->
+	<script type="module" src="./Contacts.js"></script>
+</html>

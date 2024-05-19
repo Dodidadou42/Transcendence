@@ -1,0 +1,21 @@
+services:
+  nginx:
+    depends_on:
+      - frontend
+      - backend
+    container_name: nginx-prod
+    image: nginx-prod:${VERSION_NGINX}
+
+  frontend:
+    container_name: front-prod
+    build:
+      target: production
+    image: front-prod:${VERSION_FRONT}
+
+  backend:
+    container_name: back-prod
+    build:
+      target: production
+      args:
+        - DEV=false
+    image: back-prod:${VERSION_PYTHON}

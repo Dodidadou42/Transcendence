@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.hidden {
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	<div id="body2_smessages" class="body2_smessages">
+		<section id="messHead">
+			<div id="messHeadBox">
+				<img src="" alt="Head Image" id="HeadImg">
+				<div id="HeadName"></div>
+				<div id="HeadSettings" class="HeadSettings"><div class="HeadSettingsIconBox"><span class="material-symbols-outlined">settings</span></div></div>
+				<div id="HeadProfile" class="HeadSettings"><div class="HeadSettingsIconBox"><span class="material-symbols-outlined">account_circle</span></div></div>
+				<div id="HeadBattle" class="HeadSettings2"><div class="HeadSettingsIconBox"><span class="material-symbols-outlined">swords</span></div></div>
+			</div>
+		</section>
+		<section id="messBody">
+			<div id="messPanel">
+
+			</div>
+			<div id="messSend">
+				<textarea type="text" id="messSendInput"></textarea>
+				<div id="messSendButton" title="send message"><div id="messSendIcon"><span class="material-symbols-outlined">send</span></div></div>
+			</div>
+		</section>
+		<section id="battleFromChatPanel" class="battleFromChatBox hidden">
+			<div class="battleFromChatPanel">
+				<span>Select the battle mode :</span>
+				<button id="battleFromChatClassic">Classic</button>
+				<button id="battleFromChatPower">PowerUps</button>
+				<button id="battleFromChatCancel">cancel</button>
+			</div>
+		</section>
+	</div>
+	<section id="GroupSettingsPanel" class="CSpanel hidden">
+		<div id="GShead">
+			<div id="GSheadBack">Back</div>
+			<div id="GSheadInfo">
+				<div id="CSheadInfoBox">
+					<div id="GSHImgBox" class="">    <!-- class : CanEditGroupImage -->
+						<input type="file" id="GSHImgInput">
+						<div class="GSHImgEdit">Edit</div>
+						<img src="" id="GSHImg" class="GSHImg">
+					</div>
+					<div id="GSHinfos">
+						<div id="GSHuid" class="GSHuid">La confrerie des depressifs</div>
+						<div id="GSHuidEdit" class="GSHuidEdit hidden">
+							<input id="GSHuidEditInput" value="La confrerie des depressifs" maxlength="30">
+							<div id="GSHuidEditConfirm">Change</div>
+						</div>
+						<div id="GSHnbmi">
+							<div id="GSHnbmiNB">1900 members</div>
+							<div id="GSHnbmiInv">invite</div>
+						</div>
+					</div>
+				</div>
+				<div id="GSHnbmi2">
+					<div id="GSHnbmiNB2">1900 members</div>
+					<div id="GSHnbmiInv2">invite</div>
+				</div>
+				<div id="GSmembers">
+					<!-- a user profil model -->
+					<div class="GSmembersProfil">
+						<img class="GSMPimg" src="">
+						<div class="GSMPuid">MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</div>
+						<div class="GSMPmore"><div class="GSMPmoreIcon"><span class="material-symbols-outlined">more_horiz</span></div></div>
+						<div class="GSMPmorePanelBox hidden" id="GSMPmorePanelBox">
+							<div class="GSMPmorePanel">
+								<div class="GSMPmoreProfile GSMPmoreButton">Profile</div>
+								<div class="GSMPmoreChat GSMPmoreButton">Chat</div>
+								<div class="GSMPmoreKick GSMPmoreButton">Kick</div>
+								<div class="GSMPmoreBack GSMPmoreButton">Back</div>
+							</div>
+						</div>
+					</div>
+					<!-- ******************* -->
+				</div>
+				<div id="GSleave">Leave group</div>
+			</div>
+		</div>
+	</section>
+	<section id="inviteUserToGroupPanel" class="inviteUserToGroupPanel hidden">
+		<div class="backInviteUserToGroup" id="backInviteUserToGroup">
+			<div class="InviteUserToGroupHead">
+				<div class="InviteUserToGroupHeadTitle">Send invitations</div>
+				<input type="text" maxlength="45" id="InviteUserToGroupHeadSearch"></input>
+			</div>
+			<div class="InviteUserToGroupBody" id="InviteUserToGroupBody">
+				<!-- <div class="personToGroupInvite">
+					<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=1200&h=1200&s=1">
+					<span>lfantine</span>
+					<button>add</button>
+				</div> -->
+			</div>
+			<div class="InviteUserToGroupFoot">
+				<div class="InviteUserToGroupFootBack" id="InviteUserToGroupFootBack">back</div>
+			</div>
+		</div>
+	</section>
+</html>

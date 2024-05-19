@@ -1,0 +1,31 @@
+from django.urls import path
+from .views import get_contacts_list, get_contacts_messages, get_me_user_id, post_search_user_list, remove_user_group, add_user_group, get_left_group, get_group_chat_profil, get_groups_messages, get_image, get_user_info_profil, get_user_info_profil_me, postPic, postInfos, get_user_chat_profil, get_left_contact, get_a2f_status, a2f_generate_key, a2f_active, a2f_desactive, create_group_form, send_user_history_list, game_history, get_user_me_info_home
+
+urlpatterns = [
+    path('contacts/list/', get_contacts_list, name='get_contacts_list'),
+    path('contacts/messages', get_contacts_messages, name='get_contacts_messages'),
+    path('me/user_id/', get_me_user_id, name='get_me_user_id'),
+    path('search', post_search_user_list, name='post_search_user_list'),
+    path('images/default_media/<str:image_filename>', get_image, name='get_image'),
+    path('images/users_media/<str:image_filename>', get_image, name='get_image'),
+    path('images/groups_media/<str:image_filename>', get_image, name='get_image'),
+    path('user_info_profil', get_user_info_profil, name='get_user_info_profil'),
+    path('user_info_profil_me', get_user_info_profil_me, name='get_user_info_profil_me'),
+    path('get_user_me_info_home', get_user_me_info_home, name='get_user_me_info_home'),
+    path('postPicture', postPic, name='postPic'),
+    path('postInfo', postInfos, name='postInfos'),
+    path('user_chat_profil', get_user_chat_profil, name='get_user_chat_profil'),
+    path('get_left_contact', get_left_contact, name="get_left_contact"),
+    path('me/a2f_status', get_a2f_status, name="get_a2f_status"),
+    path('me/a2f_generate_key', a2f_generate_key, name="a2f_generate_key"),
+    path('me/a2f_active', a2f_active, name="a2f_active"),
+    path('me/a2f_desactive', a2f_desactive, name="a2f_desactive"),
+    path('group/create', create_group_form, name="create_group_form"),
+    path('send_user_history_list', send_user_history_list, name="send_user_history_list"),
+    path('game_history', game_history, name="game_history"),  
+    path('get_left_group', get_left_group, name="get_left_group"),
+    path('group_chat_profil', get_group_chat_profil, name='get_group_chat_profil'),
+    path('group/messages', get_groups_messages, name='get_groups_messages'),
+    path('group/addUser', add_user_group, name='add_user_group'),
+    path('group/removeUser', remove_user_group, name='remove_user_group'),
+]

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.PageButton_connect {
+	height: 50px;
+}
+
+.body_add_by_connect {
+	background-image: url('./backgroundConnect.jpg');
+	background-position: center -0%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#footer_connect {
+	width: 400px;
+	margin: 0 auto;
+	text-align: center;
+	user-select: none;
+	font-family: Arial, sans-serif;
+}
+
+#footer_connect a {
+	color: black;
+	text-decoration: none;
+}
+
+#footer_connect a:visited {
+	color: black;
+}
+
+#SiteTitle_connect {
+	font-family: 'Kanit', sans-serif;
+	font-weight: 900;
+	font-style: italic;
+	font-size: 25px;
+	width: 50%;
+	min-width: 250px;
+	max-width: 450px;
+	height: fit-content;
+	margin: auto;
+	margin-top: 100px;
+	text-align: left;
+}
+
+@media (max-width: 900px) {
+	#SiteTitle_connect {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.hidden {
+	display: none;
+}
